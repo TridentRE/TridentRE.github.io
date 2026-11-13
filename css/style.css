@@ -3665,3 +3665,16 @@ body.emergency-mode {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* Keep the new commercial page readable and its four services balanced. */
+.commercial-page .service-areas-panel > .section-subtitle {
+    color: var(--text-dim);
+}
+.commercial-page .services-hub-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 640px) {
+    .commercial-page .services-hub-grid {
+        grid-template-columns: 1fr;
+    }
+}
