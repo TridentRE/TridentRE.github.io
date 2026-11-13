@@ -12,20 +12,50 @@ window.TRIDENT_SITE = {
 };
 
 (function () {
+  var productionHosts = ['tridentroofingandexteriors.ca', 'www.tridentroofingandexteriors.ca'];
+  var isPreview = window.location.hostname === 'tridentre.github.io';
+
   function resolveRootPath(path) {
-    if (!path || path.charAt(0) !== '/') return path;
-    var host = window.location.hostname;
-    var isLocalServer = host === 'localhost' || host === '127.0.0.1';
-    if (isLocalServer) return path;
-    // Preview/staging hosts: keep links on the same host
-    if (host.indexOf('tridentroofingandexteriors.ca') === -1) return path;
+    if (!path || path.charAt(0) !== '/' || path.charAt(1) === '/') return path;
+    // Exact host membership: look-alike/attacker hosts must not trigger live rewrites.
+    if (productionHosts.indexOf(window.location.hostname) === -1) return path;
     return window.TRIDENT_SITE.siteBase + path;
   }
 
   function initStealthLinks() {
-    document.querySelectorAll('a[href^="/"]').forEach(function (link) {
-      link.href = resolveRootPath(link.getAttribute('href'));
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      var path = link.getAttribute('href');
+      if (isPreview) {
+        var url = new URL(path, window.location.href);
+        if ((url.protocol === 'https:' || url.protocol === 'http:') &&
+            !url.username && !url.password && productionHosts.indexOf(url.hostname) !== -1) {
+          // Navigation only. Keep canonical, Open Graph and structured-data URLs unchanged.
+          link.setAttribute('href', url.pathname + url.search + url.hash);
+          return;
+        }
+      }
+      link.setAttribute('href', resolveRootPath(path));
     });
+  }
+
+  function initPreviewNotice() {
+    if (!isPreview) return;
+    var robots = document.querySelector('meta[name="robots"]');
+    if (!robots) {
+      robots = document.createElement('meta');
+      robots.name = 'robots';
+      document.head.appendChild(robots);
+    }
+    robots.content = 'noindex,nofollow';
+    if (document.getElementById('trident-preview-notice')) return;
+    var notice = document.createElement('aside');
+    notice.id = 'trident-preview-notice';
+    notice.setAttribute('role', 'note');
+    notice.textContent = 'Website preview. Please do not submit real customer information.';
+    notice.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:1001;' +
+      'padding:0.5rem 1rem;text-align:center;font-size:0.875rem;' +
+      'background:var(--accent-blue);color:var(--white);pointer-events:none;';
+    document.body.appendChild(notice);
   }
 
   function injectVerificationMeta() {
@@ -55,6 +85,7 @@ window.TRIDENT_SITE = {
   }
 
   function init() {
+    initPreviewNotice();
     initStealthLinks();
     injectVerificationMeta();
     initReviewLinks();

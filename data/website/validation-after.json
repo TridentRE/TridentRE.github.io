@@ -1,0 +1,15 @@
+{
+  "html_pages": 156,
+  "references_checked": 4511,
+  "js_blocks_checked": 2,
+  "jsonld_blocks_parsed": 304,
+  "sitemap_urls": 156,
+  "external_urls_not_requested": [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
+    "https://maps.app.goo.gl/A9c6rB5yp7LvkTxg7",
+    "https://maps.google.com/maps?q=London,+ON,+Canada&ie=UTF8&ll=42.9849,-81.4117&spn=1.8,1.8&z=7&output=embed",
+    "https://www.facebook.com/profile.php?id=61574192168160"
+  ],
+  "errors": [],
+  "warnings": []
+}

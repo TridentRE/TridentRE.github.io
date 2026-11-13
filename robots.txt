@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://tridentroofingandexteriors.ca/sitemap.xml
+Disallow: /
