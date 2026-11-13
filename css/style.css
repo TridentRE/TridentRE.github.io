@@ -3646,3 +3646,22 @@ body.emergency-mode {
         overflow-wrap: break-word !important;
     }
 }
+
+/* Contact fields must fit their grid track, including long email addresses. */
+.contact-grid > * {
+    min-width: 0;
+}
+.contact-info-panel .info-link {
+    overflow-wrap: anywhere;
+}
+/* Author label styles must not override the native hidden honeypot. */
+.premium-form [hidden] {
+    display: none !important;
+}
+.premium-form button[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
