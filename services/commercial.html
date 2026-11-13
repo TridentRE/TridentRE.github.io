@@ -60,12 +60,7 @@
         .commercial-page .section-subtitle { text-align: left; color: var(--text-dim); margin-bottom: 2rem; }
         .commercial-page .phase-tag { color: var(--accent-blue); }
         .commercial-page .service-hero h1 { margin-bottom: 1.5rem; }
-        .commercial-page .service-hero figure { margin: 0; }
-        .commercial-page .service-hero img {
-            display: block; width: 100%; height: auto; aspect-ratio: 1 / 1;
-            object-fit: cover; border-radius: var(--radius-md);
-        }
-        .commercial-page figcaption { font-size: 0.85rem; color: var(--text-dim); margin-top: 0.75rem; }
+        .commercial-page .about-visual { display: flex; justify-content: center; align-items: center; }
         .commercial-page .problem-solution { background: var(--white); }
         .commercial-page .commercial-editorial { align-items: start; }
         .commercial-page .commercial-editorial h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
@@ -92,7 +87,6 @@
         @media (max-width: 768px) {
             .commercial-page .commercial-split, .commercial-page .benefit-item { grid-template-columns: 1fr; gap: 1rem; }
             .commercial-page .commercial-split { gap: 2rem; }
-            .commercial-page .service-hero img { aspect-ratio: 3 / 2; }
             .commercial-page .commercial-editorial h2 { font-size: 1.8rem; }
             .commercial-page .benefit-item h3 { font-size: 1.15rem; }
         }
@@ -126,10 +120,9 @@
                     <p class="section-subtitle">Understand leaks, roof condition and exterior concerns before deciding on the next step. Inspections and repair recommendations for your business property in Southwestern Ontario.</p>
                     <a href="/contact.html?project=commercial#consultation-form" class="btn btn-primary">Request a Commercial Inspection</a>
                 </div>
-                <figure>
-                    <img src="../assets/service_eavestrough_new.png" width="1024" height="1024" alt="Close-up of shingles, flashing and eavestrough at a roof edge">
-                    <figcaption>Roof-edge and drainage details</figcaption>
-                </figure>
+                <div class="about-visual">
+                    <img src="../assets/logo.png" alt="Trident Roofing &amp; Exteriors logo" class="about-logo">
+                </div>
             </div>
         </section>
         <section class="problem-solution section-padding">

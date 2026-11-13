@@ -31,13 +31,16 @@ class CommercialStyleTests(unittest.TestCase):
         self.assertEqual(sum(t == 'h1' for t, _ in self.elements), 1)
         self.assertEqual(sum(a.get('class') == 'benefit-item' for _, a in self.elements), 4)
 
-    def test_existing_detail_photo_is_not_presented_as_commercial_project(self):
-        photos = [a for t, a in self.elements if t == 'img' and 'logo' not in a.get('src', '')]
-        self.assertEqual(len(photos), 1)
-        self.assertEqual(photos[0]['src'], '../assets/service_eavestrough_new.png')
-        self.assertEqual(photos[0]['alt'], 'Close-up of shingles, flashing and eavestrough at a roof edge')
-        self.assertIn('Roof-edge and drainage details', self.source)
-        self.assertTrue((ROOT / 'assets/service_eavestrough_new.png').exists())
+    def test_existing_brand_visual_never_implies_residential_work_is_commercial(self):
+        main = re.search(r'<main>(.*?)</main>', self.source, re.S).group(1)
+        images = [a for t, a in Elements(main).elements if t == 'img']
+        self.assertEqual(len(images), 1)
+        self.assertEqual(images[0]['src'], '../assets/logo.png')
+        self.assertEqual(images[0]['class'], 'about-logo')
+        self.assertEqual(images[0]['alt'], 'Trident Roofing & Exteriors logo')
+        self.assertNotIn('<figcaption', main)
+        self.assertNotIn('service_eavestrough_new.png', main)
+        self.assertTrue((ROOT / 'assets/logo.png').exists())
 
     def test_both_commercial_ctas_preserve_project_prefill_and_anchor(self):
         ctas = [a for t, a in self.elements if t == 'a' and 'project=commercial' in a.get('href', '')]
@@ -61,7 +64,7 @@ class CommercialStyleTests(unittest.TestCase):
                 continue
             self.assertTrue(all(s.strip().startswith('.commercial-page') for s in selector.split(',')), selector)
         self.assertNotIn('font-family', style)
-        self.assertIn('height: auto; aspect-ratio:', style)
+        self.assertIn('.commercial-page .about-visual', style)
         self.assertIn('white-space: normal;', style)
         self.assertIn('@media (max-width: 768px)', style)
 
