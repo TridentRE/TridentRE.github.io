@@ -46,49 +46,70 @@
       ]
     }
     </script>
-    <!-- Commercial follows the service-hero / editorial / CTA rhythm in siding
-         and flat-roofing. Scope all layout rules here: those legacy classes have
-         no shared CSS definitions, and other service pages must remain unchanged. -->
     <style>
+        /* Commercial-only composition using the original site's navy hero and steel palette. */
         .commercial-page main { padding-top: 90px; }
-        .commercial-page .service-hero { background: var(--primary-bg); }
-        .commercial-page .commercial-split {
-            display: grid; grid-template-columns: 1.15fr 0.85fr;
-            gap: 4rem; align-items: center;
-        }
-        .commercial-page .section-title { text-align: left; }
-        .commercial-page .section-subtitle { text-align: left; color: var(--text-dim); margin-bottom: 2rem; }
-        .commercial-page .phase-tag { color: var(--accent-blue); }
-        .commercial-page .service-hero h1 { margin-bottom: 1.5rem; }
-        .commercial-page .about-visual { display: flex; justify-content: center; align-items: center; }
-        .commercial-page .problem-solution { background: var(--white); }
+        .commercial-page main .section-padding { padding: 80px 0; }
+        .commercial-page .service-hero, .commercial-page .cta-banner { background: var(--hero-bg); }
+        .commercial-page .benefits-deep-dive { background: var(--accent-blue); }
+        .commercial-page .commercial-dark { color: var(--white); }
+        .commercial-page .commercial-dark :is(h1, h2, h3, p, li, strong, summary) { color: var(--white); }
+        .commercial-page .commercial-dark .phase-tag { color: var(--white); }
+        .commercial-page .commercial-dark .text-accent { color: var(--accent-cyan); }
+        .commercial-page .commercial-dark .breadcrumb-nav, .commercial-page .commercial-dark .breadcrumb-nav a,
+        .commercial-page .commercial-dark .breadcrumb-sep, .commercial-page .commercial-dark .service-area-toggle { color: var(--accent-light); }
+        .commercial-page .commercial-split { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4rem; align-items: center; }
+        .commercial-page .section-title { text-align: left; font-size: clamp(2rem, 3vw, 3rem); }
+        .commercial-page .service-hero h1 { font-size: clamp(2.4rem, 4vw, 3.7rem); margin: 1.2rem 0 1.5rem; }
+        .commercial-page .section-subtitle { text-align: left; margin-bottom: 2rem; max-width: 60ch; }
+        .commercial-page .phase-tag { display: inline-block; color: var(--accent-blue); font-size: .75rem; letter-spacing: .12em; margin-bottom: 1rem; }
+        .commercial-page .commercial-intro { max-width: 65ch; margin-top: 1.25rem; }
+        .commercial-page .commercial-dark .commercial-intro { color: var(--primary-bg); }
+        .commercial-page .roof-detail { border: 1px solid var(--accent-light); border-radius: var(--radius-md); padding: 1.5rem; background: var(--accent-blue); }
+        .commercial-page .roof-detail svg { display: block; width: 100%; height: auto; color: var(--accent-light); }
+        .commercial-page .roof-detail figcaption { border-top: 1px solid var(--accent-light); padding-top: 1rem; color: var(--primary-bg); font-size: .85rem; }
+        .commercial-page .detail-label { color: var(--white); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; }
+        .commercial-page .problem-solution, .commercial-page .commercial-faq { background: var(--primary-bg); }
+        .commercial-page .commercial-process { background: var(--secondary-bg); }
         .commercial-page .commercial-editorial { align-items: start; }
-        .commercial-page .commercial-editorial h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
-        .commercial-page .commercial-editorial p { color: var(--text-dim); }
-        .commercial-page .commercial-editorial ul { padding-left: 1.25rem; color: var(--text-dim); }
-        .commercial-page .commercial-editorial li + li { margin-top: 0.75rem; }
-        .commercial-page .benefits-deep-dive { background: var(--primary-bg); }
+        .commercial-page .commercial-editorial p + p { margin-top: 1rem; }
+        .commercial-page h2 { font-size: clamp(1.8rem, 2.6vw, 2.6rem); margin-bottom: 1.25rem; }
+        .commercial-page h3 { font-size: 1.2rem; line-height: 1.35; margin-bottom: .75rem; }
+        .commercial-page .assessment-list { list-style: none; border-top: 1px solid var(--accent-light); }
+        .commercial-page .assessment-list li { padding: 1rem 0; border-bottom: 1px solid var(--accent-light); }
+        .commercial-page .assessment-list strong { display: block; }
         .commercial-page .commercial-service-list { margin-top: 2.5rem; }
-        .commercial-page .benefit-item {
-            display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem;
-            padding: 1.5rem 0; border-top: 1px solid var(--accent-light);
-        }
-        .commercial-page .benefit-item h3 { font-size: 1.25rem; line-height: 1.4; }
-        .commercial-page .benefit-item p { color: var(--text-dim); }
-        .commercial-page .cta-banner { background: var(--secondary-bg); }
-        .commercial-page .cta-banner .container { max-width: 800px; }
+        .commercial-page .benefit-item { display: grid; grid-template-columns: .75fr 1.25fr; gap: 4rem; padding: 1.75rem 0; border-top: 1px solid var(--accent-light); }
+        .commercial-page .benefit-item h3 { display: flex; gap: 1rem; }
+        .commercial-page .service-number { color: var(--accent-light); font-size: .9rem; padding-top: .2rem; }
+        .commercial-page .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; list-style: none; margin: 2.5rem 0; }
+        .commercial-page .process-steps li { border-top: 3px solid var(--accent-blue); padding-top: 1.25rem; }
+        .commercial-page .step-number { color: var(--accent-blue); display: block; font-size: .85rem; margin-bottom: 1rem; }
+        .commercial-page .planning-note { border-left: 3px solid var(--accent-cyan); padding-left: 1.5rem; max-width: 85ch; }
+        .commercial-page .faq-list { border-top: 1px solid var(--accent-light); }
+        .commercial-page details { border-bottom: 1px solid var(--accent-light); padding: 1.2rem 0; }
+        .commercial-page summary { cursor: pointer; font-size: 1.1rem; font-weight: 600; padding-right: .5rem; }
+        .commercial-page details p { margin-top: 1rem; max-width: 70ch; }
+        .commercial-page .cta-banner .container { max-width: 850px; }
         .commercial-page .cta-banner .section-title { text-align: center; }
-        .commercial-page .cta-banner p { color: var(--text-dim); margin: 1rem 0 2rem; }
-        .commercial-page main .btn { white-space: normal; max-width: 100%; text-align: center; justify-content: center; text-decoration: none; }
+        .commercial-page .cta-banner p { margin: 1rem 0 2rem; }
+        .commercial-page main .btn { white-space: normal; max-width: 100%; text-align: center; justify-content: center; text-decoration: none; color: var(--hero-bg); }
+        .commercial-page main a:focus-visible, .commercial-page summary:focus-visible { outline: 3px solid var(--accent-cyan); outline-offset: 5px; }
         @media (max-width: 1024px) {
             .commercial-page main { padding-top: 70px; }
-            .commercial-page .commercial-split { gap: 2rem; }
+            .commercial-page .commercial-split, .commercial-page .benefit-item { gap: 2rem; }
+            .commercial-page .process-steps { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
-            .commercial-page .commercial-split, .commercial-page .benefit-item { grid-template-columns: 1fr; gap: 1rem; }
-            .commercial-page .commercial-split { gap: 2rem; }
-            .commercial-page .commercial-editorial h2 { font-size: 1.8rem; }
-            .commercial-page .benefit-item h3 { font-size: 1.15rem; }
+            .commercial-page main .section-padding { padding: 56px 0; }
+            .commercial-page .commercial-split, .commercial-page .benefit-item { grid-template-columns: 1fr; gap: 1.5rem; }
+            .commercial-page .roof-detail { max-width: 520px; }
+            .commercial-page .benefit-item { gap: .5rem; }
+            .commercial-page .phase-tag { letter-spacing: .08em; }
+        }
+        @media (max-width: 390px) {
+            .commercial-page main .container { padding-left: 1.25rem; padding-right: 1.25rem; }
+            .commercial-page .process-steps { grid-template-columns: 1fr; gap: 1.5rem; }
         }
     </style>
 </head>
@@ -111,63 +132,93 @@
         </div>
     </header>
     <main>
-        <section class="service-hero section-padding">
+        <section class="service-hero commercial-dark section-padding">
             <div class="container commercial-split">
                 <div>
                     <nav class="breadcrumb-nav" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span class="breadcrumb-sep">›</span> <a href="index.html">Services</a> <span class="breadcrumb-sep">›</span> <span>Commercial</span></nav>
                     <span class="phase-tag">For Business Owners &amp; Property Managers</span>
-                    <h1 class="section-title">Commercial Roofing <span class="text-accent">&amp; Exteriors</span></h1>
-                    <p class="section-subtitle">Understand leaks, roof condition and exterior concerns before deciding on the next step. Inspections and repair recommendations for your business property in Southwestern Ontario.</p>
+                    <h1 class="section-title">Your property.<br>Your next move.<br><span class="text-accent">A clearer roof plan.</span></h1>
+                    <p class="section-subtitle">Commercial roofing &amp; exterior services in Southwestern Ontario. Understand the leak, assess the condition and choose a scope that makes sense for your building.</p>
                     <a href="/contact.html?project=commercial#consultation-form" class="btn btn-primary">Request a Commercial Inspection</a>
                 </div>
-                <div class="about-visual">
-                    <img src="../assets/logo.png" alt="Trident Roofing &amp; Exteriors logo" class="about-logo">
-                </div>
+                <figure class="roof-detail">
+                    <div class="detail-label">Look beyond the surface</div>
+                    <svg viewBox="0 0 440 300" role="img" aria-labelledby="roof-detail-title roof-detail-desc">
+                        <title id="roof-detail-title">Illustrative roof inspection details</title>
+                        <desc id="roof-detail-desc">A schematic roof plane highlighting a penetration, roof edge and drainage. This is an illustration, not a project photograph or construction drawing.</desc>
+                        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                            <path d="M45 159 227 62 399 146 217 246Z M45 159V180L217 267 399 168V146 M217 246V267"/>
+                            <path d="m65 158 162-85 151 73-161 87Z M126 126l154 76 M185 95l154 76 M103 176l163-86 M160 204l163-86" opacity=".5"/>
+                            <path d="m178 145 25-13 28 14-25 13Z M178 145v-34l25-13 28 14v34 M178 111l28 14 25-13 M206 125v34"/>
+                        </g>
+                        <g fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                            <path d="M202 98V39h-68 M343 182h58v43 M96 191H39v42"/>
+                            <circle cx="202" cy="98" r="4"/><circle cx="343" cy="182" r="4"/><circle cx="96" cy="191" r="4"/>
+                        </g>
+                        <g fill="var(--white)" font-size="12"><text x="61" y="33">PENETRATIONS</text><text x="315" y="244">DRAINAGE</text><text x="18" y="252">EDGES &amp; TRANSITIONS</text></g>
+                    </svg>
+                    <figcaption>Roof details work together. The assessment should, too.<br>Illustrative schematic · not a project photo.</figcaption>
+                </figure>
             </div>
         </section>
         <section class="problem-solution section-padding">
             <div class="container commercial-split commercial-editorial">
                 <div>
-                    <h2>Start with the Condition of Your Property</h2>
-                    <p>A leak, visible damage or a drainage concern is a reason to assess the existing roof and exterior before choosing a repair or replacement.</p>
+                    <span class="phase-tag">01 / Understand the issue</span>
+                    <h2>A leak is a symptom.<br>Start with the building.</h2>
+                    <p>Water appearing inside does not always identify where it entered. For business owners and property managers, the first decision is not simply which material to buy; it is understanding the affected area and how the roof and exterior connect.</p>
+                    <p>Share when the leak occurs, whether it has returned after previous repairs and any changes you have noticed inside. These observations help focus the investigation rather than treating every roof concern as a full replacement.</p>
                 </div>
-                <div>
-                    <h2>A Property-Specific Assessment</h2>
-                    <ul>
-                        <li>Discuss the concerns you have noticed and the areas affected.</li>
-                        <li>Assess the existing roof, exterior and drainage details.</li>
-                        <li>Review repair recommendations and an appropriate scope of work.</li>
-                    </ul>
-                </div>
+                <ul class="assessment-list">
+                    <li><strong>Roof details</strong>Consider penetrations, transitions, flashings and seams, alongside visible surface condition and previous repair areas.</li>
+                    <li><strong>Water movement</strong>Look at drainage routes, roof edges and eavestrough concerns that may contribute to water collecting or escaping where it should not.</li>
+                    <li><strong>Interior observations</strong>Discuss stained ceilings, affected rooms and the timing of water entry alongside exterior findings. Access and the assessment scope are agreed for the property.</li>
+                </ul>
             </div>
         </section>
-        <section class="benefits-deep-dive section-padding">
+        <section class="benefits-deep-dive commercial-dark section-padding">
             <div class="container">
-                <h2 class="section-title">Roofing &amp; Exterior Services</h2>
+                <span class="phase-tag">02 / Define the right scope</span>
+                <h2 class="section-title">Commercial roofing.<br>The exterior around it.</h2>
+                <p class="commercial-intro">A practical recommendation starts with the existing building. Roof condition, the size of the affected area, repeated leaks and drainage concerns all matter when weighing a targeted repair against more extensive work.</p>
                 <div class="commercial-service-list">
-                    <div class="benefit-item">
-                        <h3>Roof Inspections &amp; Leak Repairs</h3>
-                        <p>Investigate roof condition, visible damage and leak concerns to help identify the repairs your business property needs.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h3>Flat Roof Options</h3>
-                        <p>Discuss repair or replacement options following an assessment of the existing roof. System suitability and scope are confirmed for each property.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h3>Siding, Soffit, Fascia &amp; Eavestroughs</h3>
-                        <p>Address exterior cladding, trim and drainage concerns as part of a property-specific plan.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h3>Storm Damage Documentation</h3>
-                        <p>Document observed damage and discuss repair needs after a storm, including information that may support an insurance claim.</p>
-                    </div>
+                    <div class="benefit-item"><h3><span class="service-number">01</span>Roof inspections &amp; leak repairs</h3><p>Investigate the concern and discuss the details that need attention. A repair scope should identify the area involved and the proposed work, while recognising that a local repair may not address deterioration elsewhere on the roof.</p></div>
+                    <div class="benefit-item"><h3><span class="service-number">02</span>Flat roof repair or replacement</h3><p>A flat roof does not automatically need replacing because it leaks. Assess the existing condition, recurring issues and drainage before comparing options. The roof system, material suitability and whether Trident can undertake the proposed work must be confirmed for your property.</p></div>
+                    <div class="benefit-item"><h3><span class="service-number">03</span>Siding, soffit, fascia &amp; eavestroughs</h3><p>Discuss damaged or loose cladding, exposed trim, soffit concerns and eavestrough leaks or overflow. Consider how these details meet the roof edge and direct water away from the building, so the written scope addresses the relevant connections rather than isolated symptoms.</p></div>
+                    <div class="benefit-item"><h3><span class="service-number">04</span>Storm damage documentation</h3><p>Discuss observed roof and exterior damage after a storm and the repair needs it raises. Information about visible damage may support an insurance discussion; coverage, claim requirements and decisions remain with your insurer. An assessment does not guarantee a claim outcome.</p></div>
                 </div>
             </div>
         </section>
-        <section class="cta-banner section-padding text-center">
+        <section class="commercial-process section-padding">
             <div class="container">
-                <h2 class="section-title">Tell Us About Your Property</h2>
-                <p>Share the property address, the issue you are seeing and any access considerations. We will discuss the next step with you.</p>
+                <span class="phase-tag">03 / Plan the next step</span>
+                <h2>From first inquiry to an agreed scope.</h2>
+                <ol class="process-steps">
+                    <li><span class="step-number">01 / INQUIRY</span><h3>Tell us what changed</h3><p>Send the address, your concern, photos if available and the best contact for the property.</p></li>
+                    <li><span class="step-number">02 / ASSESSMENT</span><h3>Review the property</h3><p>Discuss the issue and arrange an assessment appropriate to the building, access and proposed work.</p></li>
+                    <li><span class="step-number">03 / WRITTEN SCOPE</span><h3>Consider the options</h3><p>Review the proposed work and applicable repair or replacement options before deciding how to proceed.</p></li>
+                    <li><span class="step-number">04 / SCHEDULING</span><h3>Agree on the work</h3><p>Confirm the chosen scope, access arrangements and schedule together before work begins.</p></li>
+                </ol>
+                <p class="planning-note"><strong>Plan around the property.</strong> Tenant or staff communication, occupied areas, entry routes, deliveries, parking, roof access and equipment locations are topics to agree before work. Raise operational constraints early so they can be considered in the proposed scope and scheduling discussion.</p>
+            </div>
+        </section>
+        <section class="commercial-faq section-padding">
+            <div class="container commercial-split commercial-editorial">
+                <div><span class="phase-tag">Before you book</span><h2>Questions from<br>property owners.</h2><p>Every building has different roof details, access needs and repair history. Start with the information you have.</p></div>
+                <div class="faq-list">
+                    <details open><summary>Does a leak mean replacing the whole roof?</summary><p>Not necessarily. A localised issue may suit a repair; widespread deterioration or repeated leaks may warrant a broader scope. The recommendation depends on the property's condition and assessment findings.</p></details>
+                    <details><summary>Can the building stay in use during work?</summary><p>That depends on the proposed work and site conditions. Discuss occupancy, noise-sensitive activities, entrances and deliveries before agreeing on access and scheduling. Uninterrupted operations cannot be assumed.</p></details>
+                    <details><summary>What should I send with my inquiry?</summary><p>Include the property address, photos taken from a safe location, where and when the issue appears, any known roof history and access constraints. Please do not climb onto the roof to gather information.</p></details>
+                    <details><summary>Which commercial roof systems do you work on?</summary><p>Send any known roof-system or material details with your inquiry. Suitability and the work Trident can undertake are confirmed for each property; this page does not promise every membrane or system.</p></details>
+                    <details><summary>What if the concern follows a storm?</summary><p>Share the date, visible damage and any interior water entry. Discuss assessment and documentation needs with Trident, and confirm claim requirements directly with your insurer.</p></details>
+                </div>
+            </div>
+        </section>
+        <section class="cta-banner commercial-dark section-padding text-center">
+            <div class="container">
+                <span class="phase-tag">Commercial Roofing &amp; Exteriors</span>
+                <h2 class="section-title">Make the next decision<br>with your property in view.</h2>
+                <p>Tell us about the building, the issue and any access considerations. Start a conversation about an inspection and an appropriate scope of work.</p>
                 <a href="/contact.html?project=commercial#consultation-form" class="btn btn-primary">Request a Commercial Inspection</a>
                 <p class="service-area-toggle-wrap"><a href="index.html" class="service-area-toggle">← All services</a></p>
             </div>
