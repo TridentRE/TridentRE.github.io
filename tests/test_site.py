@@ -109,6 +109,14 @@ class StaticSiteTests(unittest.TestCase):
         itemlist = [json.loads(block) for block in hub.jsonld if json.loads(block).get("@type") == "ItemList"][0]
         self.assertEqual(itemlist["itemListElement"][-1]["name"], "Commercial Roofing & Exteriors")
 
+    def test_contact_responsive_and_honeypot_safeguards(self):
+        css = (ROOT / "css/style.css").read_text()
+        self.assertIn(".contact-grid > * {\n    min-width: 0;", css)
+        self.assertIn(".premium-form [hidden] {\n    display: none !important;", css)
+        self.assertIn('.premium-form button[type="submit"] {', css)
+        self.assertIn("max-width: 100%;", css)
+        self.assertIn("white-space: normal;", css)
+
     def test_form_is_isolated_and_no_js_cannot_put_personal_details_in_url(self):
         app = (ROOT / "js/app.js").read_text()
         self.assertNotIn("fetch('/api/submit'", app)
