@@ -34,7 +34,7 @@ class CommercialStyleTests(unittest.TestCase):
     def test_illustration_does_not_imply_portfolio_work(self):
         main = re.search(r'<main>(.*?)</main>', self.source, re.S).group(1)
         self.assertNotIn('<img', main)
-        self.assertIn('Illustrative schematic · not a project photo.', main)
+        self.assertIn('Roof-detail illustration.', main)
         self.assertIn('aria-labelledby="roof-detail-title roof-detail-desc"', main)
         self.assertIn('not a project photograph or construction drawing', main)
 
@@ -52,6 +52,8 @@ class CommercialStyleTests(unittest.TestCase):
         self.assertGreaterEqual(len(words), 750)
         self.assertLessEqual(len(words), 1100)
         self.assertEqual(main.count('<details'), 5)
+        self.assertIn('Commercial roofing.<br>Protect your property.', main)
+        self.assertIn('Can you assess an existing flat roof?', main)
         for detail in ('penetrations', 'transitions', 'flashings', 'seams', 'drainage', 'Interior observations', 'WRITTEN SCOPE', 'access', 'insurer'):
             self.assertIn(detail, main)
         for unsupported in ('TPO', 'EPDM', '24/7', 'maintenance plan', 'Master Elite', 'no disruption'):
