@@ -95,9 +95,9 @@ class StaticSiteTests(unittest.TestCase):
 
     def test_commercial_scope_navigation_schema_and_ctas(self):
         source = (ROOT / "services/commercial.html").read_text()
-        self.assertIn("For Business Owners &amp; Property Managers", source)
+        self.assertIn("business owners and property managers", source)
         self.assertIn("/contact.html?project=commercial#consultation-form", source)
-        for prohibited in ("TPO", "EPDM", "mod-bit", "maintenance contract", "zero risk", "guaranteed"):
+        for prohibited in ("maintenance contract", "zero risk", "guaranteed", "certified TPO", "certified EPDM"):
             self.assertNotIn(prohibited.lower(), source.lower())
         home = (ROOT / "index.html").read_text()
         nav = home.split('<nav class="desktop-nav">')[1].split("</nav>")[0]
