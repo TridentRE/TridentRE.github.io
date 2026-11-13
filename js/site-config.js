@@ -3,6 +3,7 @@
  * Set googleSiteVerification when Google Search Console provides a meta tag code.
  */
 window.TRIDENT_SITE = {
+  releaseMode: 'preview',
   siteBase: 'https://www.tridentroofingandexteriors.ca',
   facebookUrl: 'https://www.facebook.com/profile.php?id=61574192168160',
   googleBusinessUrl: 'https://maps.app.goo.gl/A9c6rB5yp7LvkTxg7',

@@ -147,7 +147,7 @@
 
                     <!-- Right: Form -->
                     <div class="contact-form-panel reveal">
-                        <form id="consultation-form" class="premium-form">
+                        <form id="consultation-form" class="premium-form" method="post" action="/contact.html">
                             <div class="form-group">
                                 <label for="first-name">Your Name*</label>
                                 <input type="text" id="first-name" name="name" placeholder="Enter your full name" required>
@@ -196,10 +196,11 @@
                                 <textarea id="message" name="message" rows="4" placeholder="Describe your project needs" required></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-xl w-100">
+                            <button type="submit" class="btn btn-primary btn-xl w-100" disabled>
                                 Submit Your Request <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
                             </button>
                         </form>
+                        <noscript><p>Online requests require JavaScript. Please call or email Trident using the contact details on this page.</p></noscript>
                     </div>
                 </div>
             </div>
@@ -274,5 +275,6 @@
 
     <script src="js/site-config.js"></script>
     <script src="js/app.js?v=96"></script>
+    <script src="js/website-form.js"></script>
 </body>
 </html>

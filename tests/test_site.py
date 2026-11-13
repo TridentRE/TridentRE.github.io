@@ -48,7 +48,7 @@ class StaticSiteTests(unittest.TestCase):
         self.assertIn("Sitemap:", manifest["robots_txt"])
 
     def test_production_restore_dry_run_changes_no_repository_bytes(self):
-        paths = [p for p in ROOT.rglob("*.html") if ".git" not in p.parts] + [ROOT / "robots.txt"]
+        paths = [p for p in ROOT.rglob("*.html") if ".git" not in p.parts] + [ROOT / "robots.txt", ROOT / "js/site-config.js"]
         before = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         result = subprocess.run([sys.executable, str(ROOT / "scripts/prepare-production.py")], capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
@@ -65,11 +65,14 @@ class StaticSiteTests(unittest.TestCase):
             (root / "data/website").mkdir(parents=True)
             (root / "index.html").write_text('<meta name="robots" content="noindex,nofollow">')
             (root / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
+            (root / "js").mkdir()
+            (root / "js/site-config.js").write_text("releaseMode: 'preview'")
             original = '<meta name="robots" content="index, follow">'
             manifest = {"html_robots": {"index.html": original}, "robots_txt": "User-agent: *\nAllow: /\n"}
             (root / "data/website/production-seo.json").write_text(json.dumps(manifest))
             plan = module.changes(root)
-            self.assertEqual(len(plan), 2)
+            self.assertEqual(len(plan), 3)
+            self.assertIn(("js/site-config.js", b"releaseMode: 'production'"), plan)
             for relative, data in plan:
                 (root / relative).write_bytes(data)
             self.assertEqual((root / "index.html").read_text(), original)
@@ -106,12 +109,21 @@ class StaticSiteTests(unittest.TestCase):
         itemlist = [json.loads(block) for block in hub.jsonld if json.loads(block).get("@type") == "ItemList"][0]
         self.assertEqual(itemlist["itemListElement"][-1]["name"], "Commercial Roofing & Exteriors")
 
-    def test_form_contract_remains_unchanged_pending_backend(self):
-        source = (ROOT / "js/app.js").read_text()
-        self.assertIn("fetch('/api/submit'", source)
-        self.assertIn("Object.fromEntries(formData.entries())", source)
-        self.assertIn("data.services = Array.from(checkboxes).map(cb => cb.value)", source)
-        self.assertIn("checkbox.checked ? 'yes' : 'no'", source)
+    def test_form_is_isolated_and_no_js_cannot_put_personal_details_in_url(self):
+        app = (ROOT / "js/app.js").read_text()
+        self.assertNotIn("fetch('/api/submit'", app)
+        html = (ROOT / "contact.html").read_text()
+        self.assertIn('method="post" action="/contact.html"', html)
+        self.assertIn('class="btn btn-primary btn-xl w-100" disabled', html)
+        self.assertIn("<noscript>", html)
+        self.assertIn('src="js/website-form.js"', html)
+        source = (ROOT / "js/website-form.js").read_text()
+        self.assertIn("host === PREVIEW_HOST", source)
+        self.assertIn("credentials: 'omit'", source)
+        self.assertIn("data.submission_id = requestId", source)
+        self.assertIn("result.ok !== true", source)
+        self.assertIn("releaseMode === 'production'", source)
+
 
 
 if __name__ == "__main__":

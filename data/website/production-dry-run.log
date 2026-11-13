@@ -1,4 +1,4 @@
-DRY RUN: 157 file(s) would restore recorded production robots directives.
+DRY RUN: 158 file(s) would restore recorded production robots directives.
 areas/arthur.html
 areas/aylmer.html
 areas/baden.html
@@ -156,4 +156,5 @@ services/roofing.html
 services/siding.html
 services/skylights.html
 robots.txt
+js/site-config.js
 No files changed. --write requires explicit production-launch approval; do not run it for preview.

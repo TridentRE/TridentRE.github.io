@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Restore recorded production robots directives. DRY RUN unless --write.
+"""Restore production SEO and enable reviewed production-host form routing. DRY RUN unless --write.
 
 Run --write only after the owner approves production launch. This edits local files;
 it does not commit, push, publish, change Pages configuration or alter DNS.
@@ -30,6 +30,13 @@ def changes(root):
     robots = manifest["robots_txt"].encode()
     if (root / "robots.txt").read_bytes() != robots:
         planned.append(("robots.txt", robots))
+    config = root / "js/site-config.js"
+    if config.exists():
+        before = config.read_bytes()
+        if before.count(b"releaseMode: 'preview'") == 1:
+            planned.append(("js/site-config.js", before.replace(b"releaseMode: 'preview'", b"releaseMode: 'production'")))
+        elif before.count(b"releaseMode: 'production'") != 1:
+            raise ValueError("Expected one reviewed releaseMode in js/site-config.js")
     return planned
 
 

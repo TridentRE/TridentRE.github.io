@@ -1,19 +1,26 @@
 # Trident Roofing & Exteriors
 
-Website takeover staging repository. Live-domain cutover requires owner approval.
+Static website with a separate, write-only lead-intake backend.
+The live domain is not changed by this branch.
 
-## Preview preparation
+## Preview
 
-- Branch: `chore/site-import`; **not production-ready for contact submissions**.
-- All source pages are temporarily `noindex,nofollow`; robots disallows crawling.
-- Commercial content is an owner-requested draft, not a live-domain publication.
-- Baseline, validation evidence, form audit and handoff: [data/website/baseline-report.md](data/website/baseline-report.md).
+- Preview uses only a separate development lead database. Use synthetic details, never real customer information.
+- Notification delivery is disabled in preview; saved test requests do not email the business.
+- All preview HTML is noindex,nofollow and robots disallows crawling.
+- Production-domain form routing stays disabled until the reviewed release mode is enabled.
+- The form fails closed without JavaScript; personal details are never submitted by native GET.
+
+## Checks
 
 ```sh
 python scripts/validate_site.py --output data/website/validation-after.json
 python -m unittest discover -s tests -v
-python scripts/prepare-production.py  # dry run only; no writes
+node --test scripts/website-form.test.cjs
+python scripts/prepare-production.py  # dry run, no writes
 ```
 
-Do not run `prepare-production.py --write` until production launch is explicitly approved.
-It only restores recorded SEO directives; it does not deploy, publish or switch DNS.
+`prepare-production.py --write` restores the recorded production SEO directives and
+production-host form routing. It does not publish, deploy a backend or alter DNS.
+Run it only for an approved production release. Production backend deployment,
+notification activation, DNS zone backup, HTTPS checks and owner approval are separate gates.
