@@ -46,8 +46,53 @@
       ]
     }
     </script>
+    <!-- Commercial follows the service-hero / editorial / CTA rhythm in siding
+         and flat-roofing. Scope all layout rules here: those legacy classes have
+         no shared CSS definitions, and other service pages must remain unchanged. -->
+    <style>
+        .commercial-page main { padding-top: 90px; }
+        .commercial-page .service-hero { background: var(--primary-bg); }
+        .commercial-page .commercial-split {
+            display: grid; grid-template-columns: 1.15fr 0.85fr;
+            gap: 4rem; align-items: center;
+        }
+        .commercial-page .section-title { text-align: left; }
+        .commercial-page .section-subtitle { text-align: left; color: var(--text-dim); margin-bottom: 2rem; }
+        .commercial-page .phase-tag { color: var(--accent-blue); }
+        .commercial-page .service-hero h1 { margin-bottom: 1.5rem; }
+        .commercial-page .about-visual { display: flex; justify-content: center; align-items: center; }
+        .commercial-page .problem-solution { background: var(--white); }
+        .commercial-page .commercial-editorial { align-items: start; }
+        .commercial-page .commercial-editorial h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        .commercial-page .commercial-editorial p { color: var(--text-dim); }
+        .commercial-page .commercial-editorial ul { padding-left: 1.25rem; color: var(--text-dim); }
+        .commercial-page .commercial-editorial li + li { margin-top: 0.75rem; }
+        .commercial-page .benefits-deep-dive { background: var(--primary-bg); }
+        .commercial-page .commercial-service-list { margin-top: 2.5rem; }
+        .commercial-page .benefit-item {
+            display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem;
+            padding: 1.5rem 0; border-top: 1px solid var(--accent-light);
+        }
+        .commercial-page .benefit-item h3 { font-size: 1.25rem; line-height: 1.4; }
+        .commercial-page .benefit-item p { color: var(--text-dim); }
+        .commercial-page .cta-banner { background: var(--secondary-bg); }
+        .commercial-page .cta-banner .container { max-width: 800px; }
+        .commercial-page .cta-banner .section-title { text-align: center; }
+        .commercial-page .cta-banner p { color: var(--text-dim); margin: 1rem 0 2rem; }
+        .commercial-page main .btn { white-space: normal; max-width: 100%; text-align: center; justify-content: center; text-decoration: none; }
+        @media (max-width: 1024px) {
+            .commercial-page main { padding-top: 70px; }
+            .commercial-page .commercial-split { gap: 2rem; }
+        }
+        @media (max-width: 768px) {
+            .commercial-page .commercial-split, .commercial-page .benefit-item { grid-template-columns: 1fr; gap: 1rem; }
+            .commercial-page .commercial-split { gap: 2rem; }
+            .commercial-page .commercial-editorial h2 { font-size: 1.8rem; }
+            .commercial-page .benefit-item h3 { font-size: 1.15rem; }
+        }
+    </style>
 </head>
-<body class="contact-page service-areas-page commercial-page">
+<body class="commercial-page">
     <header class="main-header">
         <div class="container header-content">
             <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="Trident Roofing Logo" height="60"></a>
@@ -66,46 +111,65 @@
         </div>
     </header>
     <main>
-        <section class="contact-hero section-padding">
-            <div class="container">
-                <div class="hero-text-center">
+        <section class="service-hero section-padding">
+            <div class="container commercial-split">
+                <div>
                     <nav class="breadcrumb-nav" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span class="breadcrumb-sep">›</span> <a href="index.html">Services</a> <span class="breadcrumb-sep">›</span> <span>Commercial</span></nav>
                     <span class="phase-tag">For Business Owners &amp; Property Managers</span>
-                    <h1 class="section-title">Roofing &amp; Exteriors for Your Business Property</h1>
-                    <p class="section-subtitle">Understand leaks, roof condition and exterior concerns before deciding on the next step. Trident provides inspections and repair recommendations based on your property.</p>
+                    <h1 class="section-title">Commercial Roofing <span class="text-accent">&amp; Exteriors</span></h1>
+                    <p class="section-subtitle">Understand leaks, roof condition and exterior concerns before deciding on the next step. Inspections and repair recommendations for your business property in Southwestern Ontario.</p>
                     <a href="/contact.html?project=commercial#consultation-form" class="btn btn-primary">Request a Commercial Inspection</a>
+                </div>
+                <div class="about-visual">
+                    <img src="../assets/logo.png" alt="Trident Roofing &amp; Exteriors logo" class="about-logo">
                 </div>
             </div>
         </section>
-        <section class="section-padding pt-0">
+        <section class="problem-solution section-padding">
+            <div class="container commercial-split commercial-editorial">
+                <div>
+                    <h2>Start with the Condition of Your Property</h2>
+                    <p>A leak, visible damage or a drainage concern is a reason to assess the existing roof and exterior before choosing a repair or replacement.</p>
+                </div>
+                <div>
+                    <h2>A Property-Specific Assessment</h2>
+                    <ul>
+                        <li>Discuss the concerns you have noticed and the areas affected.</li>
+                        <li>Assess the existing roof, exterior and drainage details.</li>
+                        <li>Review repair recommendations and an appropriate scope of work.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="benefits-deep-dive section-padding">
             <div class="container">
-                <div class="service-areas-panel">
-                    <h2 class="section-title">Start with the Condition of Your Property</h2>
-                    <p class="section-subtitle">We assess the existing roof and exterior, discuss the concerns you have noticed, and recommend an appropriate scope of work.</p>
-                    <div class="services-hub-grid">
-                        <div class="services-hub-card">
-                            <h3>Roof Inspections &amp; Leak Repairs</h3>
-                            <p>Investigate roof condition, visible damage and leak concerns to help identify the repairs your business property needs.</p>
-                        </div>
-                        <div class="services-hub-card">
-                            <h3>Flat Roof Options</h3>
-                            <p>Discuss repair or replacement options following an assessment of the existing roof. System suitability and scope are confirmed for each property.</p>
-                        </div>
-                        <div class="services-hub-card">
-                            <h3>Siding, Soffit, Fascia &amp; Eavestroughs</h3>
-                            <p>Address exterior cladding, trim and drainage concerns as part of a property-specific plan.</p>
-                        </div>
-                        <div class="services-hub-card">
-                            <h3>Storm Damage Documentation</h3>
-                            <p>Document observed damage and discuss repair needs after a storm, including information that may support an insurance claim.</p>
-                        </div>
+                <h2 class="section-title">Roofing &amp; Exterior Services</h2>
+                <div class="commercial-service-list">
+                    <div class="benefit-item">
+                        <h3>Roof Inspections &amp; Leak Repairs</h3>
+                        <p>Investigate roof condition, visible damage and leak concerns to help identify the repairs your business property needs.</p>
                     </div>
-                    <div class="service-areas-cta">
-                        <h2>Tell Us About Your Property</h2>
-                        <p>Share the property address, the issue you are seeing and any access considerations. We will discuss the next step with you.</p>
-                        <a href="/contact.html?project=commercial#consultation-form" class="btn btn-primary">Request a Commercial Inspection</a>
+                    <div class="benefit-item">
+                        <h3>Flat Roof Options</h3>
+                        <p>Discuss repair or replacement options following an assessment of the existing roof. System suitability and scope are confirmed for each property.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Siding, Soffit, Fascia &amp; Eavestroughs</h3>
+                        <p>Address exterior cladding, trim and drainage concerns as part of a property-specific plan.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>Storm Damage Documentation</h3>
+                        <p>Document observed damage and discuss repair needs after a storm, including information that may support an insurance claim.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="cta-banner section-padding text-center">
+            <div class="container">
+                <h2 class="section-title">Tell Us About Your Property</h2>
+                <p>Share the property address, the issue you are seeing and any access considerations. We will discuss the next step with you.</p>
+                <a href="/contact.html?project=commercial#consultation-form" class="btn btn-primary">Request a Commercial Inspection</a>
+                <p class="service-area-toggle-wrap"><a href="index.html" class="service-area-toggle">← All services</a></p>
             </div>
         </section>
     </main>
