@@ -1,0 +1,2241 @@
+{
+  "origin": "https://www.tridentroofingandexteriors.ca",
+  "method": "GET only; response scripts never executed",
+  "html_pages": 155,
+  "asset_files": 24,
+  "results": [
+    {
+      "path": "areas/arthur.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/arthur.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/arthur.html",
+      "saved_sha256": "55b2be7c16b0b4048f16212f74874cc63a51f37208008ef414697d71b3a0d02b",
+      "live_sha256": "55b2be7c16b0b4048f16212f74874cc63a51f37208008ef414697d71b3a0d02b",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Arthur, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/aylmer.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/aylmer.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/aylmer.html",
+      "saved_sha256": "6e7f25b48c590254baaf0d6a17279ce354129c0285a0bec522e788dc9c36a696",
+      "live_sha256": "6e7f25b48c590254baaf0d6a17279ce354129c0285a0bec522e788dc9c36a696",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Aylmer, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/baden.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/baden.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/baden.html",
+      "saved_sha256": "fcfde977b82c1b45b34c894fb67c5e1900490bb7b5fa811ab1cb158eeb6199f9",
+      "live_sha256": "fcfde977b82c1b45b34c894fb67c5e1900490bb7b5fa811ab1cb158eeb6199f9",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Baden, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/belmont.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/belmont.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/belmont.html",
+      "saved_sha256": "083ceeec500d4b47fb323183da7e252209053da655a2b23955d5a91349babac7",
+      "live_sha256": "083ceeec500d4b47fb323183da7e252209053da655a2b23955d5a91349babac7",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Belmont, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/blenheim.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/blenheim.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/blenheim.html",
+      "saved_sha256": "decf1738c2a5d3ac710260530d0293837bb54a20e609cde6023990bfa52e574c",
+      "live_sha256": "decf1738c2a5d3ac710260530d0293837bb54a20e609cde6023990bfa52e574c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Blenheim, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/brantford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/brantford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/brantford.html",
+      "saved_sha256": "57c75a4a1dcc91024bd725ef8b30218d852282af23ef9a91c5dbf3df7a88b29e",
+      "live_sha256": "57c75a4a1dcc91024bd725ef8b30218d852282af23ef9a91c5dbf3df7a88b29e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Brantford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/burford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/burford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/burford.html",
+      "saved_sha256": "1533c30e0201cb93fd2236a57cf1d324855e8528570a8d8d91201282e9ee549b",
+      "live_sha256": "1533c30e0201cb93fd2236a57cf1d324855e8528570a8d8d91201282e9ee549b",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Burford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/caledonia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/caledonia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/caledonia.html",
+      "saved_sha256": "991db755f144d5cdfad1da3408431a71b521ff16342ed57bff80ff9034eebf5e",
+      "live_sha256": "991db755f144d5cdfad1da3408431a71b521ff16342ed57bff80ff9034eebf5e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Caledonia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/cambridge.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/cambridge.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/cambridge.html",
+      "saved_sha256": "c21b180b36a2f5f239ab87998db4ab5c69c62798adc9bce95541d17f58b54aba",
+      "live_sha256": "c21b180b36a2f5f239ab87998db4ab5c69c62798adc9bce95541d17f58b54aba",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Cambridge, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/chatham.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/chatham.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/chatham.html",
+      "saved_sha256": "d2fd0f920bca695197eb14e4e94f7f92a3a82717b6793498a916281d02c3ba5a",
+      "live_sha256": "d2fd0f920bca695197eb14e4e94f7f92a3a82717b6793498a916281d02c3ba5a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Chatham, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/clinton.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/clinton.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/clinton.html",
+      "saved_sha256": "6d769623a2a1db6361ecc952b34fe778291c4f12b75f4e63cd8f854ed44b2978",
+      "live_sha256": "6d769623a2a1db6361ecc952b34fe778291c4f12b75f4e63cd8f854ed44b2978",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Clinton, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/delhi.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/delhi.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/delhi.html",
+      "saved_sha256": "9a4c7f688053392bf771e5c0b3016f2073bd9f8ee48005cafabf99c8ef193cec",
+      "live_sha256": "9a4c7f688053392bf771e5c0b3016f2073bd9f8ee48005cafabf99c8ef193cec",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Delhi, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/dunnville.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/dunnville.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/dunnville.html",
+      "saved_sha256": "a28b3e6c6318bbf992674dd90263340fda4ab71cf48c3466876c2690ca3531a2",
+      "live_sha256": "a28b3e6c6318bbf992674dd90263340fda4ab71cf48c3466876c2690ca3531a2",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Dunnville, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/dutton.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/dutton.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/dutton.html",
+      "saved_sha256": "665cfbdffb1fa0e42ba4a899fe70f69bfcebcc6f2807afe9bb558cda60c8c716",
+      "live_sha256": "665cfbdffb1fa0e42ba4a899fe70f69bfcebcc6f2807afe9bb558cda60c8c716",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Dutton, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/elmira.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/elmira.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/elmira.html",
+      "saved_sha256": "1a7f6aeaa224c70d32838d2682e78fab313f62100fe40215c6bc927cf00a6ebf",
+      "live_sha256": "1a7f6aeaa224c70d32838d2682e78fab313f62100fe40215c6bc927cf00a6ebf",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Elmira, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/elora.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/elora.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/elora.html",
+      "saved_sha256": "d34167014fd7ccc598870b34e867b63649429b38e31314216be74d62c2f29553",
+      "live_sha256": "d34167014fd7ccc598870b34e867b63649429b38e31314216be74d62c2f29553",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Elora, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/embro.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/embro.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/embro.html",
+      "saved_sha256": "187762cb16c99ebe2d5514eb480a5d521c82f312af7779b028235c489d5341cc",
+      "live_sha256": "187762cb16c99ebe2d5514eb480a5d521c82f312af7779b028235c489d5341cc",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Embro, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/erin.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/erin.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/erin.html",
+      "saved_sha256": "0933a96ff73960fdb52868c01d9a4064e7294b30ea90df89efd366defd80da3d",
+      "live_sha256": "0933a96ff73960fdb52868c01d9a4064e7294b30ea90df89efd366defd80da3d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Erin, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/exeter.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/exeter.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/exeter.html",
+      "saved_sha256": "4681b0b823a9f54138311643255a6656c9a5db790f4c5b942d1e8ba78f4ce294",
+      "live_sha256": "4681b0b823a9f54138311643255a6656c9a5db790f4c5b942d1e8ba78f4ce294",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Exeter, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/fergus.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/fergus.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/fergus.html",
+      "saved_sha256": "b2d4294aabcfb89946e88b923885a3f8fbe7510e8899b7d91b08d56f7e4f286e",
+      "live_sha256": "b2d4294aabcfb89946e88b923885a3f8fbe7510e8899b7d91b08d56f7e4f286e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Fergus, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/glencoe.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/glencoe.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/glencoe.html",
+      "saved_sha256": "0bfa66256c4764cd79d38ac2dac0923ec36a228b8948d106a3c31664bd91d037",
+      "live_sha256": "0bfa66256c4764cd79d38ac2dac0923ec36a228b8948d106a3c31664bd91d037",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Glencoe, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/goderich.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/goderich.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/goderich.html",
+      "saved_sha256": "b600ee679951f567be488c06627665342a3664fc3321a32de8be69d5131b827c",
+      "live_sha256": "b600ee679951f567be488c06627665342a3664fc3321a32de8be69d5131b827c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Goderich, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/guelph.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/guelph.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/guelph.html",
+      "saved_sha256": "d3133b56e03c9d7de6d75282830db5f0e442da7033c2e05629a88c5bfe29b67a",
+      "live_sha256": "d3133b56e03c9d7de6d75282830db5f0e442da7033c2e05629a88c5bfe29b67a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Guelph, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/ingersoll.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/ingersoll.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/ingersoll.html",
+      "saved_sha256": "fd22fed90d7f280f18b5173ab7ce06d5f9749302b19badd6b2919f94aba0dd09",
+      "live_sha256": "fd22fed90d7f280f18b5173ab7ce06d5f9749302b19badd6b2919f94aba0dd09",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Ingersoll, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/kitchener.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/kitchener.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/kitchener.html",
+      "saved_sha256": "685aba0d0d48e047e54e68202a7b2cfa24f2aaa5e679297b6e73fc68beaf81bf",
+      "live_sha256": "685aba0d0d48e047e54e68202a7b2cfa24f2aaa5e679297b6e73fc68beaf81bf",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Kitchener, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/komoka.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/komoka.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/komoka.html",
+      "saved_sha256": "377d92b39deafd1d58edf040e85db78b083672e4ab495b4cba96273c8999f519",
+      "live_sha256": "377d92b39deafd1d58edf040e85db78b083672e4ab495b4cba96273c8999f519",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Komoka, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/listowel.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/listowel.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/listowel.html",
+      "saved_sha256": "0bd57407267ae725a187b98b1c016860be34dec068db6c7e724657290258c316",
+      "live_sha256": "0bd57407267ae725a187b98b1c016860be34dec068db6c7e724657290258c316",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Listowel, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/london.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/london.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/london.html",
+      "saved_sha256": "b545c35fc73b1560930188ca11f0c4b6e15048382a55c0fde66f25668c847c64",
+      "live_sha256": "b545c35fc73b1560930188ca11f0c4b6e15048382a55c0fde66f25668c847c64",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in London, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/lucan.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/lucan.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/lucan.html",
+      "saved_sha256": "99c89c586485fe685e1e560cea32141b197ce5b96cfeeeb21a5f803e200161a8",
+      "live_sha256": "99c89c586485fe685e1e560cea32141b197ce5b96cfeeeb21a5f803e200161a8",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Lucan, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/mitchell.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/mitchell.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/mitchell.html",
+      "saved_sha256": "1a4b56c58901bdae486ec52a8bd9d3b70ad3939f4738fb6dacd1bff3fda4858d",
+      "live_sha256": "1a4b56c58901bdae486ec52a8bd9d3b70ad3939f4738fb6dacd1bff3fda4858d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Mitchell, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/mount-brydges.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/mount-brydges.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/mount-brydges.html",
+      "saved_sha256": "b15577263d41408c9fc6162a91f3a1dabe0f8f28b7de7662ae41fd18e25eefdc",
+      "live_sha256": "b15577263d41408c9fc6162a91f3a1dabe0f8f28b7de7662ae41fd18e25eefdc",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Mount Brydges, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/mount-forest.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/mount-forest.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/mount-forest.html",
+      "saved_sha256": "6b7478feb34b08d613bb1a11ed175e1cadd06e487763650baf5839c606dad452",
+      "live_sha256": "6b7478feb34b08d613bb1a11ed175e1cadd06e487763650baf5839c606dad452",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Mount Forest, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/new-hamburg.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/new-hamburg.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/new-hamburg.html",
+      "saved_sha256": "ad90c5c1d0c225fd5e019e394fa5bd1019176ac9afe92bac315699cc7c4d15bc",
+      "live_sha256": "ad90c5c1d0c225fd5e019e394fa5bd1019176ac9afe92bac315699cc7c4d15bc",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in New Hamburg, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/norwich.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/norwich.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/norwich.html",
+      "saved_sha256": "05a337d03fe6b2850c1111ed655a8ffb4164bc2b4400d14dffd895b13a91c3ec",
+      "live_sha256": "05a337d03fe6b2850c1111ed655a8ffb4164bc2b4400d14dffd895b13a91c3ec",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Norwich, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/paris.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/paris.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/paris.html",
+      "saved_sha256": "2a903503a4407dc1aa8e637829d8d0404e867b64bcebcce3927f699f995e350c",
+      "live_sha256": "2a903503a4407dc1aa8e637829d8d0404e867b64bcebcce3927f699f995e350c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Paris, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/petrolia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/petrolia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/petrolia.html",
+      "saved_sha256": "c17c01f03d0ada3fc222590dbaaa87718a75d79ead92119651fb0349b5603e0a",
+      "live_sha256": "c17c01f03d0ada3fc222590dbaaa87718a75d79ead92119651fb0349b5603e0a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Petrolia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/port-dover.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/port-dover.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/port-dover.html",
+      "saved_sha256": "e50dfb04f588120cea2a25b6f9231e46e9b4f12cab5a8c611eaac2360f1d2e1d",
+      "live_sha256": "e50dfb04f588120cea2a25b6f9231e46e9b4f12cab5a8c611eaac2360f1d2e1d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Port Dover, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/port-stanley.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/port-stanley.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/port-stanley.html",
+      "saved_sha256": "ada7c679bb5ba4598b1b77a7016c80ca73022686ca7b873b76b8817ca4504861",
+      "live_sha256": "ada7c679bb5ba4598b1b77a7016c80ca73022686ca7b873b76b8817ca4504861",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Port Stanley, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/ridgetown.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/ridgetown.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/ridgetown.html",
+      "saved_sha256": "10254124ad4e60c50c25b360d71f272eb9d1a1f11479c0eaea79e4b97219be5f",
+      "live_sha256": "10254124ad4e60c50c25b360d71f272eb9d1a1f11479c0eaea79e4b97219be5f",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Ridgetown, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/sarnia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/sarnia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/sarnia.html",
+      "saved_sha256": "4e74b03b5adbeb30a0177fd2ce2692b336023b81fbcd5292425d3f6a557a1166",
+      "live_sha256": "4e74b03b5adbeb30a0177fd2ce2692b336023b81fbcd5292425d3f6a557a1166",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Sarnia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/seaforth.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/seaforth.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/seaforth.html",
+      "saved_sha256": "f6528ba2100f701f393d9509ecf26e95484c6eb59cdbd666dee2cc1f1fba8d31",
+      "live_sha256": "f6528ba2100f701f393d9509ecf26e95484c6eb59cdbd666dee2cc1f1fba8d31",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Seaforth, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/simcoe.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/simcoe.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/simcoe.html",
+      "saved_sha256": "849c779768ac1a3dd3f1a2f08eb466692c2b8d2987b1d9329e40516d73454f86",
+      "live_sha256": "849c779768ac1a3dd3f1a2f08eb466692c2b8d2987b1d9329e40516d73454f86",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Simcoe, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/st-jacobs.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/st-jacobs.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/st-jacobs.html",
+      "saved_sha256": "12e3842d754358254ddfcc520db8b66c7101f275fe5dd122f734d9b72303c57e",
+      "live_sha256": "12e3842d754358254ddfcc520db8b66c7101f275fe5dd122f734d9b72303c57e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in St. Jacobs, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/st-marys.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/st-marys.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/st-marys.html",
+      "saved_sha256": "a30a4409091df341d37dd5490592c0a8951e1670c828516845cfad40c466af3d",
+      "live_sha256": "a30a4409091df341d37dd5490592c0a8951e1670c828516845cfad40c466af3d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in St. Marys, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/st-thomas.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/st-thomas.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/st-thomas.html",
+      "saved_sha256": "e98f1ff7e3ee055ee8ca058b3b1bbe02cf81f87844b6dec60de870fed312aed7",
+      "live_sha256": "e98f1ff7e3ee055ee8ca058b3b1bbe02cf81f87844b6dec60de870fed312aed7",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in St. Thomas, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/stratford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/stratford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/stratford.html",
+      "saved_sha256": "521564ee19b5af66774473b0c784b7a7388283023364d34316132eda48a9a647",
+      "live_sha256": "521564ee19b5af66774473b0c784b7a7388283023364d34316132eda48a9a647",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Stratford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/strathroy.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/strathroy.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/strathroy.html",
+      "saved_sha256": "3d8ea9815382cde5cc4f119e64ead9ef0e2244cf215b992a9615a012a7b25525",
+      "live_sha256": "3d8ea9815382cde5cc4f119e64ead9ef0e2244cf215b992a9615a012a7b25525",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Strathroy, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/tavistock.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/tavistock.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/tavistock.html",
+      "saved_sha256": "161a62a1fbd52ba995f57ddbe627ab9d52d0e10587686545e804d4f8254cb9c3",
+      "live_sha256": "161a62a1fbd52ba995f57ddbe627ab9d52d0e10587686545e804d4f8254cb9c3",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Tavistock, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/tillsonburg.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/tillsonburg.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/tillsonburg.html",
+      "saved_sha256": "9e9724253bea74ed5dc9a357649f538529ac91550c56192c4fe027df608a19b2",
+      "live_sha256": "9e9724253bea74ed5dc9a357649f538529ac91550c56192c4fe027df608a19b2",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Tillsonburg, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/wallaceburg.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/wallaceburg.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/wallaceburg.html",
+      "saved_sha256": "d76cae540fcf36ad6db366a005fd0969202b892aaca6eb7d75c25970127c35e5",
+      "live_sha256": "d76cae540fcf36ad6db366a005fd0969202b892aaca6eb7d75c25970127c35e5",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Wallaceburg, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/waterford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/waterford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/waterford.html",
+      "saved_sha256": "9878b004e9b9562a46ad5095f48211ff68285e7317892587574ef88666b32caa",
+      "live_sha256": "9878b004e9b9562a46ad5095f48211ff68285e7317892587574ef88666b32caa",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Waterford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/waterloo.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/waterloo.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/waterloo.html",
+      "saved_sha256": "8fc6f03644cfbbe5e2888ca7658c5269bf96b4af0dcaaaea4340081b07828642",
+      "live_sha256": "8fc6f03644cfbbe5e2888ca7658c5269bf96b4af0dcaaaea4340081b07828642",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Waterloo, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/west-lorne.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/west-lorne.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/west-lorne.html",
+      "saved_sha256": "2baf8fe0028e9ddbbc259344946591531407da2122855df5544f8328699b3d12",
+      "live_sha256": "2baf8fe0028e9ddbbc259344946591531407da2122855df5544f8328699b3d12",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in West Lorne, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/woodstock.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/woodstock.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/woodstock.html",
+      "saved_sha256": "4ec084fb9d44cf53ab79c5777e88247c67476eabe6008bb104e9af3797640540",
+      "live_sha256": "4ec084fb9d44cf53ab79c5777e88247c67476eabe6008bb104e9af3797640540",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Woodstock, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "areas/wyoming.html",
+      "url": "https://www.tridentroofingandexteriors.ca/areas/wyoming.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/areas/wyoming.html",
+      "saved_sha256": "54f2daafefcca9b54455a79483c0f0289e81c93be2d995737a4468a440f5cbf7",
+      "live_sha256": "54f2daafefcca9b54455a79483c0f0289e81c93be2d995737a4468a440f5cbf7",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing &amp; Exteriors in Wyoming, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "certifications.html",
+      "url": "https://www.tridentroofingandexteriors.ca/certifications.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/certifications.html",
+      "saved_sha256": "26bf934ea955526e104e69eb14e31f3d78aa1fca0ed386bac36287d2d21e5049",
+      "live_sha256": "26bf934ea955526e104e69eb14e31f3d78aa1fca0ed386bac36287d2d21e5049",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Certifications & Brand Partners | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "contact.html",
+      "url": "https://www.tridentroofingandexteriors.ca/contact.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/contact.html",
+      "saved_sha256": "e858e9a38f0be860faba5c64d8d2ab2a323171b2f9f9d493cabc04887c47c89a",
+      "live_sha256": "e858e9a38f0be860faba5c64d8d2ab2a323171b2f9f9d493cabc04887c47c89a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Contact Us | Trident Roofing & Exteriors | Premium Engineering Ontario"
+      ]
+    },
+    {
+      "path": "faq-costs.html",
+      "url": "https://www.tridentroofingandexteriors.ca/faq-costs.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/faq-costs.html",
+      "saved_sha256": "47fa923a8229ddbd9b63d42a82bfbeed49f3bbc66c8f9f1334a527596a13aaab",
+      "live_sha256": "47fa923a8229ddbd9b63d42a82bfbeed49f3bbc66c8f9f1334a527596a13aaab",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Costs in Ontario FAQ | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "faq-eavestroughs.html",
+      "url": "https://www.tridentroofingandexteriors.ca/faq-eavestroughs.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/faq-eavestroughs.html",
+      "saved_sha256": "a37d9629c2ab852a82c5fb77cb8a3e95d891374f8c85ef90f2faa5c5ab2d5bf4",
+      "live_sha256": "a37d9629c2ab852a82c5fb77cb8a3e95d891374f8c85ef90f2faa5c5ab2d5bf4",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough & Gutter FAQ | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "faq-insurance.html",
+      "url": "https://www.tridentroofingandexteriors.ca/faq-insurance.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/faq-insurance.html",
+      "saved_sha256": "b3ff55a458ae6944f5dcbab7cba8740c2cfdb1cb4dcf6c27360610b6ea9a603e",
+      "live_sha256": "b3ff55a458ae6944f5dcbab7cba8740c2cfdb1cb4dcf6c27360610b6ea9a603e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Insurance & Storm Damage FAQ | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "faq.html",
+      "url": "https://www.tridentroofingandexteriors.ca/faq.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/faq.html",
+      "saved_sha256": "ba32d45141588992631b2d94979e5bcde9a32ce797c3437ce8880b326cfb7c13",
+      "live_sha256": "ba32d45141588992631b2d94979e5bcde9a32ce797c3437ce8880b326cfb7c13",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "FAQ | Trident Roofing & Exteriors | Ontario Roofing Questions"
+      ]
+    },
+    {
+      "path": "guides/choosing-shingles.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/choosing-shingles.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/choosing-shingles.html",
+      "saved_sha256": "67e13e7476047be84278022838b807636dde788d4dcb1a084afaa2a1934ace94",
+      "live_sha256": "67e13e7476047be84278022838b807636dde788d4dcb1a084afaa2a1934ace94",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Choosing Architectural Shingles | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/fall-gutter-prep.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/fall-gutter-prep.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/fall-gutter-prep.html",
+      "saved_sha256": "2a10a40b81476c6e28a55018a20e92d88fea2777c3f2a2aae1437b19f74147b1",
+      "live_sha256": "2a10a40b81476c6e28a55018a20e92d88fea2777c3f2a2aae1437b19f74147b1",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Fall Gutter & Eavestrough Prep | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/ice-dam-prevention.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/ice-dam-prevention.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/ice-dam-prevention.html",
+      "saved_sha256": "a9e20b45bdbf8996ffb58327342eb52f636643871d6fd5b4d0ed34e57108088d",
+      "live_sha256": "a9e20b45bdbf8996ffb58327342eb52f636643871d6fd5b4d0ed34e57108088d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Ice Dam Prevention in Ontario | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/index.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/index.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/index.html",
+      "saved_sha256": "52cb33c75945e69aa155ff77eb838c95955f49a292e38ac5d07485f12c290b95",
+      "live_sha256": "52cb33c75945e69aa155ff77eb838c95955f49a292e38ac5d07485f12c290b95",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Homeowner Guides | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/roof-repair-vs-replacement.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/roof-repair-vs-replacement.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/roof-repair-vs-replacement.html",
+      "saved_sha256": "446ecf48aaf9e28c53203b8b5f1b2833267b717a976bb50f4bc3df03ee14e622",
+      "live_sha256": "446ecf48aaf9e28c53203b8b5f1b2833267b717a976bb50f4bc3df03ee14e622",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roof Repair vs Replacement | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/roof-ventilation.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/roof-ventilation.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/roof-ventilation.html",
+      "saved_sha256": "0adc9c6b4a27a5d08b770b00c126a6d80c1f5171cedbe044c1a012c5c5b6a7b9",
+      "live_sha256": "0adc9c6b4a27a5d08b770b00c126a6d80c1f5171cedbe044c1a012c5c5b6a7b9",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roof Ventilation for Ontario Homes | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/spring-roof-inspection.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/spring-roof-inspection.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/spring-roof-inspection.html",
+      "saved_sha256": "ce199cf7095e28e2853020d82ee44059c0f8fdcfa43891f7c7f802cd5de76803",
+      "live_sha256": "ce199cf7095e28e2853020d82ee44059c0f8fdcfa43891f7c7f802cd5de76803",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Spring Roof Inspection Checklist | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/storm-damage.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/storm-damage.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/storm-damage.html",
+      "saved_sha256": "063009cd6e2a5e98e66bb129cb0ab3ddd641781d41444dcec00feb25ab61e5fd",
+      "live_sha256": "063009cd6e2a5e98e66bb129cb0ab3ddd641781d41444dcec00feb25ab61e5fd",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Storm Damage & Insurance Claims Guide | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "guides/winter-roof-prep.html",
+      "url": "https://www.tridentroofingandexteriors.ca/guides/winter-roof-prep.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/guides/winter-roof-prep.html",
+      "saved_sha256": "0b87fd1ce7b50563e9e0efb009d8edc795453a7b9dac8ba081907c8936a2898a",
+      "live_sha256": "0b87fd1ce7b50563e9e0efb009d8edc795453a7b9dac8ba081907c8936a2898a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Winter Roof Preparation in Ontario | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "index.html",
+      "url": "https://www.tridentroofingandexteriors.ca/",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/",
+      "saved_sha256": "097224ffeff5a75d4bcc1a0e00550f1d3cdce500e3a990b5aaf2053083a043c6",
+      "live_sha256": "097224ffeff5a75d4bcc1a0e00550f1d3cdce500e3a990b5aaf2053083a043c6",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Trident Roofing & Exteriors | Premium Exterior Engineering Ontario"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-brantford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-brantford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-brantford.html",
+      "saved_sha256": "897a23ad704418bb71f6a140afb42fd5943028a3c9c817f95d689fb15a167385",
+      "live_sha256": "897a23ad704418bb71f6a140afb42fd5943028a3c9c817f95d689fb15a167385",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Brantford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-cambridge.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-cambridge.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-cambridge.html",
+      "saved_sha256": "57c037e337f73bdc5ce3ffdd8dfc4497066a49c2e4a87aa8fbfac5050f19fd3e",
+      "live_sha256": "57c037e337f73bdc5ce3ffdd8dfc4497066a49c2e4a87aa8fbfac5050f19fd3e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Cambridge, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-chatham.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-chatham.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-chatham.html",
+      "saved_sha256": "d9efe33cb0416264df5fc261fe05a0ae1f1606dd9c712f3314bd07bf5f9c8136",
+      "live_sha256": "d9efe33cb0416264df5fc261fe05a0ae1f1606dd9c712f3314bd07bf5f9c8136",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Chatham, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-guelph.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-guelph.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-guelph.html",
+      "saved_sha256": "4e8db3e84911842357395173330f1c9584b841df81cf4c465d4561bcbd348f18",
+      "live_sha256": "4e8db3e84911842357395173330f1c9584b841df81cf4c465d4561bcbd348f18",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Guelph, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-kitchener.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-kitchener.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-kitchener.html",
+      "saved_sha256": "6e6edec599d22ca6d6a7f195bcbacd474a21148e2b418d3a2892e5d33cb3b410",
+      "live_sha256": "6e6edec599d22ca6d6a7f195bcbacd474a21148e2b418d3a2892e5d33cb3b410",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Kitchener, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-london.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-london.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-london.html",
+      "saved_sha256": "6c85ea3d340bf749327e2376bacdf762627090ee2adcfa3e85b852097d01bf5a",
+      "live_sha256": "6c85ea3d340bf749327e2376bacdf762627090ee2adcfa3e85b852097d01bf5a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in London, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-sarnia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-sarnia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-sarnia.html",
+      "saved_sha256": "9a7215b2828ee765811e7e6c2b3ec6435d5fc2f684838e43373f0090f1964370",
+      "live_sha256": "9a7215b2828ee765811e7e6c2b3ec6435d5fc2f684838e43373f0090f1964370",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Sarnia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-st-thomas.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-st-thomas.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-st-thomas.html",
+      "saved_sha256": "05f615a050b6e8653ad3bd7d13c830b2bfe6eb3821011ddc2c5de5c7bc440ae5",
+      "live_sha256": "05f615a050b6e8653ad3bd7d13c830b2bfe6eb3821011ddc2c5de5c7bc440ae5",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in St. Thomas, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-waterloo.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-waterloo.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-waterloo.html",
+      "saved_sha256": "368c7f34cedb7ac2cea1512c4a0c8f24f7f824cdd431d7fac744f3577b4768c3",
+      "live_sha256": "368c7f34cedb7ac2cea1512c4a0c8f24f7f824cdd431d7fac744f3577b4768c3",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Waterloo, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/eavestroughs-woodstock.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-woodstock.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/eavestroughs-woodstock.html",
+      "saved_sha256": "9ff60cfabfd5298aed4b05a20d753d02f39a90b2c6e746b826aafc919d85323f",
+      "live_sha256": "9ff60cfabfd5298aed4b05a20d753d02f39a90b2c6e746b826aafc919d85323f",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestrough Contractor in Woodstock, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-arthur.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-arthur.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-arthur.html",
+      "saved_sha256": "36fe2345d27f4733429ec6934e140cade8595042ba81d7702071227d69af85d8",
+      "live_sha256": "36fe2345d27f4733429ec6934e140cade8595042ba81d7702071227d69af85d8",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Arthur, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-aylmer.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-aylmer.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-aylmer.html",
+      "saved_sha256": "779d6389a6d548e89724c9095fa2f7df589342a731a45b90195f22dd670fec7f",
+      "live_sha256": "779d6389a6d548e89724c9095fa2f7df589342a731a45b90195f22dd670fec7f",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Aylmer, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-baden.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-baden.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-baden.html",
+      "saved_sha256": "ae4f616c4d35d33d24f13f7f42d7636cac1277bf931e624e7cfefd50d36cd8f9",
+      "live_sha256": "ae4f616c4d35d33d24f13f7f42d7636cac1277bf931e624e7cfefd50d36cd8f9",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Baden, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-belmont.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-belmont.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-belmont.html",
+      "saved_sha256": "cd973f2f944a3132c2368acceb808c35916ce035c97c98258bd78668fc3c50a6",
+      "live_sha256": "cd973f2f944a3132c2368acceb808c35916ce035c97c98258bd78668fc3c50a6",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Belmont, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-blenheim.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-blenheim.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-blenheim.html",
+      "saved_sha256": "4518a00ddf6d6f0855927396fb03a6f7545f82ce7ebcf99c8af9404deedf070b",
+      "live_sha256": "4518a00ddf6d6f0855927396fb03a6f7545f82ce7ebcf99c8af9404deedf070b",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Blenheim, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-brantford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-brantford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-brantford.html",
+      "saved_sha256": "63687cd8724f88e9b2092604ca6d1a7a531090f131c15462d3e8703d880e8453",
+      "live_sha256": "63687cd8724f88e9b2092604ca6d1a7a531090f131c15462d3e8703d880e8453",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Brantford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-burford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-burford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-burford.html",
+      "saved_sha256": "a3f69be5b13572f5cf8690f9752551c05dbe4b79b290b27067e4e95bc55077dd",
+      "live_sha256": "a3f69be5b13572f5cf8690f9752551c05dbe4b79b290b27067e4e95bc55077dd",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Burford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-caledonia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-caledonia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-caledonia.html",
+      "saved_sha256": "b816e09af21c05e2884d56256a4a82243864e3d6888041a342947fd92c6ef25f",
+      "live_sha256": "b816e09af21c05e2884d56256a4a82243864e3d6888041a342947fd92c6ef25f",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Caledonia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-cambridge.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-cambridge.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-cambridge.html",
+      "saved_sha256": "0d94a42d45468826b0f6b5a4e4993b4c55d7aad81719126ed961bdff645ef55c",
+      "live_sha256": "0d94a42d45468826b0f6b5a4e4993b4c55d7aad81719126ed961bdff645ef55c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Cambridge, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-chatham.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-chatham.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-chatham.html",
+      "saved_sha256": "3e3faed9933debce52d44602022b1b74fac6996d15411f7d5ff2b613690b7152",
+      "live_sha256": "3e3faed9933debce52d44602022b1b74fac6996d15411f7d5ff2b613690b7152",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Chatham, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-clinton.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-clinton.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-clinton.html",
+      "saved_sha256": "82955abfeeeef9ce9157cfc53566d36a2a2b365f21a34667b2cb25847a1b63a7",
+      "live_sha256": "82955abfeeeef9ce9157cfc53566d36a2a2b365f21a34667b2cb25847a1b63a7",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Clinton, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-delhi.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-delhi.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-delhi.html",
+      "saved_sha256": "5f2ce44f4efa63d76fdd576edea7c4edf75341d4e6a242bf7601fd4d930ef601",
+      "live_sha256": "5f2ce44f4efa63d76fdd576edea7c4edf75341d4e6a242bf7601fd4d930ef601",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Delhi, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-dunnville.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-dunnville.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-dunnville.html",
+      "saved_sha256": "78af2b408876c1571bcf22b45b5d6a153fad53b08ce2b70ad1809023bb80cbd2",
+      "live_sha256": "78af2b408876c1571bcf22b45b5d6a153fad53b08ce2b70ad1809023bb80cbd2",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Dunnville, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-dutton.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-dutton.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-dutton.html",
+      "saved_sha256": "24a19204ed0c7021d4c479b37be2e34d42061c676b1d239989038ec8776f16a5",
+      "live_sha256": "24a19204ed0c7021d4c479b37be2e34d42061c676b1d239989038ec8776f16a5",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Dutton, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-elmira.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-elmira.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-elmira.html",
+      "saved_sha256": "5b7c482935194a8309c6e30d668da29361e8eae08ae577d2f9105528b9bf19e2",
+      "live_sha256": "5b7c482935194a8309c6e30d668da29361e8eae08ae577d2f9105528b9bf19e2",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Elmira, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-elora.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-elora.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-elora.html",
+      "saved_sha256": "a41e88e997e40bea5b55be352f6c0f4d4274bdeab41c39642dce7bbf042fe10c",
+      "live_sha256": "a41e88e997e40bea5b55be352f6c0f4d4274bdeab41c39642dce7bbf042fe10c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Elora, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-embro.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-embro.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-embro.html",
+      "saved_sha256": "2f3b993c65c352c2b6066812260e7884039eb8cf75e8d06c6d647310e6cd07a9",
+      "live_sha256": "2f3b993c65c352c2b6066812260e7884039eb8cf75e8d06c6d647310e6cd07a9",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Embro, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-erin.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-erin.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-erin.html",
+      "saved_sha256": "7a05a5c0ed4b26cf4cc081be2cb60b98f6587be9033dd52168ed48f6aceff97d",
+      "live_sha256": "7a05a5c0ed4b26cf4cc081be2cb60b98f6587be9033dd52168ed48f6aceff97d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Erin, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-exeter.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-exeter.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-exeter.html",
+      "saved_sha256": "966d394c2b55d8b8acf56423edfe7635d1f90397beb3f0be93bdd918ff7919ee",
+      "live_sha256": "966d394c2b55d8b8acf56423edfe7635d1f90397beb3f0be93bdd918ff7919ee",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Exeter, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-fergus.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-fergus.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-fergus.html",
+      "saved_sha256": "5c1b272ff519ae973c94750d04a90f1b60b56b43135e1241b5ed5edf5d685ce5",
+      "live_sha256": "5c1b272ff519ae973c94750d04a90f1b60b56b43135e1241b5ed5edf5d685ce5",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Fergus, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-glencoe.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-glencoe.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-glencoe.html",
+      "saved_sha256": "0a5516acd0ae4e75bcc77ad0131210f2fe254b1d9b76d9164f8bc08e839da340",
+      "live_sha256": "0a5516acd0ae4e75bcc77ad0131210f2fe254b1d9b76d9164f8bc08e839da340",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Glencoe, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-goderich.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-goderich.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-goderich.html",
+      "saved_sha256": "dcab111647c2580bf683b2d7d58d5b52e71adbaaf618fc2d1d284056cbaa1d56",
+      "live_sha256": "dcab111647c2580bf683b2d7d58d5b52e71adbaaf618fc2d1d284056cbaa1d56",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Goderich, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-guelph.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-guelph.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-guelph.html",
+      "saved_sha256": "6044565afcffa1c753cf63abb081975eb32595f69c6f3f25d8eba0f7514b8f6c",
+      "live_sha256": "6044565afcffa1c753cf63abb081975eb32595f69c6f3f25d8eba0f7514b8f6c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Guelph, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-ingersoll.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-ingersoll.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-ingersoll.html",
+      "saved_sha256": "e21f45850e8b17b9e267b9da0f245386cd91968928cdcc011542cf3d72894618",
+      "live_sha256": "e21f45850e8b17b9e267b9da0f245386cd91968928cdcc011542cf3d72894618",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Ingersoll, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-kitchener.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-kitchener.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-kitchener.html",
+      "saved_sha256": "96ffd2b870bad185b80632ad8090822960828d85a181fad78684a067a5eb4cd2",
+      "live_sha256": "96ffd2b870bad185b80632ad8090822960828d85a181fad78684a067a5eb4cd2",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Kitchener, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-komoka.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-komoka.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-komoka.html",
+      "saved_sha256": "fa9d61ab8c8a2cc0222989606c39fd2089e7e059a874dee4687c2e48249c0e50",
+      "live_sha256": "fa9d61ab8c8a2cc0222989606c39fd2089e7e059a874dee4687c2e48249c0e50",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Komoka, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-listowel.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-listowel.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-listowel.html",
+      "saved_sha256": "71d7984bf88377941dd9c9c2094de34a148181b2d91a1ec597ef4379389ca6d8",
+      "live_sha256": "71d7984bf88377941dd9c9c2094de34a148181b2d91a1ec597ef4379389ca6d8",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Listowel, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-london.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-london.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-london.html",
+      "saved_sha256": "48a9d8a1205b9e5f8daf2dcd56dbbce59cfa6d9a1b2dd31f0b254ac9be1d06d4",
+      "live_sha256": "48a9d8a1205b9e5f8daf2dcd56dbbce59cfa6d9a1b2dd31f0b254ac9be1d06d4",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in London, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-lucan.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-lucan.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-lucan.html",
+      "saved_sha256": "9f3ac44f0e7ac0043fff02fa6da29e1e5f892f915edfd0a9aff7753d13ed18ee",
+      "live_sha256": "9f3ac44f0e7ac0043fff02fa6da29e1e5f892f915edfd0a9aff7753d13ed18ee",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Lucan, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-mitchell.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-mitchell.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-mitchell.html",
+      "saved_sha256": "95c845fe8e5853b84f6f8410a6a1cf1931c112b438768f156b96f1a937480545",
+      "live_sha256": "95c845fe8e5853b84f6f8410a6a1cf1931c112b438768f156b96f1a937480545",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Mitchell, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-mount-brydges.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-mount-brydges.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-mount-brydges.html",
+      "saved_sha256": "ad2838918534cb20546e21015a8065190792d6dd55931c99a5c029a286a67cd9",
+      "live_sha256": "ad2838918534cb20546e21015a8065190792d6dd55931c99a5c029a286a67cd9",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Mount Brydges, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-mount-forest.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-mount-forest.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-mount-forest.html",
+      "saved_sha256": "4f47f3e7de1fc53d1905373e00cc78005acf5df1f28d410b885b89eaa7b3fa7c",
+      "live_sha256": "4f47f3e7de1fc53d1905373e00cc78005acf5df1f28d410b885b89eaa7b3fa7c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Mount Forest, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-new-hamburg.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-new-hamburg.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-new-hamburg.html",
+      "saved_sha256": "c5019f75fc0608c02b6ada961d7c24c8151ce3937791d567632bee0dc0ec170d",
+      "live_sha256": "c5019f75fc0608c02b6ada961d7c24c8151ce3937791d567632bee0dc0ec170d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in New Hamburg, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-norwich.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-norwich.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-norwich.html",
+      "saved_sha256": "7574f50cbc638f0ae6de601943d017bb30a951d13e5e0ee8928261ceeb754309",
+      "live_sha256": "7574f50cbc638f0ae6de601943d017bb30a951d13e5e0ee8928261ceeb754309",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Norwich, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-paris.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-paris.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-paris.html",
+      "saved_sha256": "8edf33b906d70fe4dd31cf3a18a7b54d2a56c14a1663aa24bf35214c7ef9b236",
+      "live_sha256": "8edf33b906d70fe4dd31cf3a18a7b54d2a56c14a1663aa24bf35214c7ef9b236",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Paris, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-petrolia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-petrolia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-petrolia.html",
+      "saved_sha256": "77703036fa1bfe6e568fea1cc9a9d1ff4c69cb78921129d96ef5eaa7170ca02b",
+      "live_sha256": "77703036fa1bfe6e568fea1cc9a9d1ff4c69cb78921129d96ef5eaa7170ca02b",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Petrolia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-port-dover.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-port-dover.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-port-dover.html",
+      "saved_sha256": "df01dec1131c39bf424ad1b7abbc2d55ca9d6c27204f5e2250540655943ef989",
+      "live_sha256": "df01dec1131c39bf424ad1b7abbc2d55ca9d6c27204f5e2250540655943ef989",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Port Dover, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-port-stanley.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-port-stanley.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-port-stanley.html",
+      "saved_sha256": "e46e35256bc74691f11ef7ddcd6c0452aa9dbed3edd5ceea2a2c88633a1e06e0",
+      "live_sha256": "e46e35256bc74691f11ef7ddcd6c0452aa9dbed3edd5ceea2a2c88633a1e06e0",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Port Stanley, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-ridgetown.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-ridgetown.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-ridgetown.html",
+      "saved_sha256": "c0da9d00247574ba066931ca1ecd5bf4d68c1cb84e93a9544a5ca7ba08f7d70b",
+      "live_sha256": "c0da9d00247574ba066931ca1ecd5bf4d68c1cb84e93a9544a5ca7ba08f7d70b",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Ridgetown, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-sarnia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-sarnia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-sarnia.html",
+      "saved_sha256": "e36a3adfaec55707a24848a06405b66b005a0e0a786b1c844eac9e3af9a64b9f",
+      "live_sha256": "e36a3adfaec55707a24848a06405b66b005a0e0a786b1c844eac9e3af9a64b9f",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Sarnia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-seaforth.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-seaforth.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-seaforth.html",
+      "saved_sha256": "8377b45b862dbff78d1a6a4b890d68b0de888205358193b37b66f5bd6fd3f416",
+      "live_sha256": "8377b45b862dbff78d1a6a4b890d68b0de888205358193b37b66f5bd6fd3f416",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Seaforth, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-simcoe.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-simcoe.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-simcoe.html",
+      "saved_sha256": "59903c65e82ee43070a4b0793f89568e5d2dbaa414e3d6f258a66f9de48a5b8a",
+      "live_sha256": "59903c65e82ee43070a4b0793f89568e5d2dbaa414e3d6f258a66f9de48a5b8a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Simcoe, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-st-jacobs.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-st-jacobs.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-st-jacobs.html",
+      "saved_sha256": "b80704097e1070f3d3fe3a62e34fea5f3bf7ac22e90e6e333208338bd7e32728",
+      "live_sha256": "b80704097e1070f3d3fe3a62e34fea5f3bf7ac22e90e6e333208338bd7e32728",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in St. Jacobs, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-st-marys.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-st-marys.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-st-marys.html",
+      "saved_sha256": "2633458478c6da3df17e5995955145163515a79ee6b53acaa49e206de63c1e11",
+      "live_sha256": "2633458478c6da3df17e5995955145163515a79ee6b53acaa49e206de63c1e11",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in St. Marys, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-st-thomas.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-st-thomas.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-st-thomas.html",
+      "saved_sha256": "1671e746ab1f0185a689e6eaa8a87957075410595fab0af326991887d8c5a479",
+      "live_sha256": "1671e746ab1f0185a689e6eaa8a87957075410595fab0af326991887d8c5a479",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in St. Thomas, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-stratford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-stratford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-stratford.html",
+      "saved_sha256": "de4507ea8250956471b8feacb6cbfd672719163beb46e49c8b76101fec36775e",
+      "live_sha256": "de4507ea8250956471b8feacb6cbfd672719163beb46e49c8b76101fec36775e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Stratford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-strathroy.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-strathroy.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-strathroy.html",
+      "saved_sha256": "7f6854e64718da089b0f6be2d2fe313e1a2e87e27d8c4445262ffb0cf286b654",
+      "live_sha256": "7f6854e64718da089b0f6be2d2fe313e1a2e87e27d8c4445262ffb0cf286b654",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Strathroy, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-tavistock.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-tavistock.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-tavistock.html",
+      "saved_sha256": "19555778f84072cd7c03d44c438ab0fedc3e59d524425b061baa395f34623784",
+      "live_sha256": "19555778f84072cd7c03d44c438ab0fedc3e59d524425b061baa395f34623784",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Tavistock, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-tillsonburg.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-tillsonburg.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-tillsonburg.html",
+      "saved_sha256": "26eecd017bde06d82403a9b13bd2d39b9cc360c4d5f1828b4861c9b75fc31cf9",
+      "live_sha256": "26eecd017bde06d82403a9b13bd2d39b9cc360c4d5f1828b4861c9b75fc31cf9",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Tillsonburg, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-wallaceburg.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-wallaceburg.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-wallaceburg.html",
+      "saved_sha256": "426f717f434fe03eb56b85e1173480da4ae5d77df9a9c082fd37f8beed44715c",
+      "live_sha256": "426f717f434fe03eb56b85e1173480da4ae5d77df9a9c082fd37f8beed44715c",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Wallaceburg, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-waterford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-waterford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-waterford.html",
+      "saved_sha256": "69ee8dca89013c30ebdb7bb79f4edc148c8298c7a5c66f632c7ddf96014df57a",
+      "live_sha256": "69ee8dca89013c30ebdb7bb79f4edc148c8298c7a5c66f632c7ddf96014df57a",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Waterford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-waterloo.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-waterloo.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-waterloo.html",
+      "saved_sha256": "370cfef288a46f4f1286fb9b737ad674394135f81f8814abe38350df30a7b5ff",
+      "live_sha256": "370cfef288a46f4f1286fb9b737ad674394135f81f8814abe38350df30a7b5ff",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Waterloo, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-west-lorne.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-west-lorne.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-west-lorne.html",
+      "saved_sha256": "a4c11d8af1e4faacc6229f6bbd51403979372a55faa5cbf5db91e9c914e631bc",
+      "live_sha256": "a4c11d8af1e4faacc6229f6bbd51403979372a55faa5cbf5db91e9c914e631bc",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in West Lorne, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-woodstock.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-woodstock.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-woodstock.html",
+      "saved_sha256": "b27bbb26a2ea38bcacbbd2bc7d51dd5fa4b1d25b5492deec65085eee07d01f04",
+      "live_sha256": "b27bbb26a2ea38bcacbbd2bc7d51dd5fa4b1d25b5492deec65085eee07d01f04",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Woodstock, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/roofing-wyoming.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/roofing-wyoming.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/roofing-wyoming.html",
+      "saved_sha256": "11a9c6542eababbe7fdfa10a81063649ec99b9ee8999898b4a89feaf48190f00",
+      "live_sha256": "11a9c6542eababbe7fdfa10a81063649ec99b9ee8999898b4a89feaf48190f00",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Roofing Contractor in Wyoming, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-brantford.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-brantford.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-brantford.html",
+      "saved_sha256": "92f62ea4ce0126b0ed4eb41aa1dd4d70b3e96340afefdb3c5dba7b322bfd20a7",
+      "live_sha256": "92f62ea4ce0126b0ed4eb41aa1dd4d70b3e96340afefdb3c5dba7b322bfd20a7",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Brantford, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-cambridge.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-cambridge.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-cambridge.html",
+      "saved_sha256": "210216d4ec8ffaffd7c4db8a43a607199971eebb0f2be7695fb60ca0d61ddabc",
+      "live_sha256": "210216d4ec8ffaffd7c4db8a43a607199971eebb0f2be7695fb60ca0d61ddabc",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Cambridge, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-chatham.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-chatham.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-chatham.html",
+      "saved_sha256": "0bf098ee4e2caa31705bf3377151b0da403985e091bfae4724bd61d677d06fe3",
+      "live_sha256": "0bf098ee4e2caa31705bf3377151b0da403985e091bfae4724bd61d677d06fe3",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Chatham, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-guelph.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-guelph.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-guelph.html",
+      "saved_sha256": "d9eb83f28e47e83057c801c813bfbb7cececccf8029d7ce167417e43ccea66d6",
+      "live_sha256": "d9eb83f28e47e83057c801c813bfbb7cececccf8029d7ce167417e43ccea66d6",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Guelph, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-kitchener.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-kitchener.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-kitchener.html",
+      "saved_sha256": "fcf2efde9a246c627975cfca2b341432e4e55be9328d85918a6bb99aa3b3fc68",
+      "live_sha256": "fcf2efde9a246c627975cfca2b341432e4e55be9328d85918a6bb99aa3b3fc68",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Kitchener, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-london.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-london.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-london.html",
+      "saved_sha256": "b3600d6ac2c8c798b607a300dc0bca67d45eaad0364f39b669e8b8e43f765848",
+      "live_sha256": "b3600d6ac2c8c798b607a300dc0bca67d45eaad0364f39b669e8b8e43f765848",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in London, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-sarnia.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-sarnia.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-sarnia.html",
+      "saved_sha256": "d2ce69ccd4dc575c32a22edf3f25989081bbe6a615f980121ea8e40f0c063c54",
+      "live_sha256": "d2ce69ccd4dc575c32a22edf3f25989081bbe6a615f980121ea8e40f0c063c54",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Sarnia, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-st-thomas.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-st-thomas.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-st-thomas.html",
+      "saved_sha256": "64aab26f82e2a4e097cf0677603e977f1360951099cf89c93a259f997def042d",
+      "live_sha256": "64aab26f82e2a4e097cf0677603e977f1360951099cf89c93a259f997def042d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in St. Thomas, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-waterloo.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-waterloo.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-waterloo.html",
+      "saved_sha256": "3ea15c14d6a5950e99e299d36c8388fce9b745b4142e81bce1e840f6e6288608",
+      "live_sha256": "3ea15c14d6a5950e99e299d36c8388fce9b745b4142e81bce1e840f6e6288608",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Waterloo, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "local/siding-woodstock.html",
+      "url": "https://www.tridentroofingandexteriors.ca/local/siding-woodstock.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/local/siding-woodstock.html",
+      "saved_sha256": "800a9df4bc6d5d2f09ede8f2c70cd8fb093946e3e00c84a1bad1279c12d90860",
+      "live_sha256": "800a9df4bc6d5d2f09ede8f2c70cd8fb093946e3e00c84a1bad1279c12d90860",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Siding Contractor in Woodstock, Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "process.html",
+      "url": "https://www.tridentroofingandexteriors.ca/process.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/process.html",
+      "saved_sha256": "cbf2b265fcf215f6b18d534b739f26887f08001ffa9132469ed88d24eb8f5e6d",
+      "live_sha256": "cbf2b265fcf215f6b18d534b739f26887f08001ffa9132469ed88d24eb8f5e6d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Our Process | Trident Roofing & Exteriors Ontario"
+      ]
+    },
+    {
+      "path": "reviews.html",
+      "url": "https://www.tridentroofingandexteriors.ca/reviews.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/reviews.html",
+      "saved_sha256": "a1f1a925fbcc50a0c123931f935345a1876f8f1325daeedadaf9865060cada19",
+      "live_sha256": "a1f1a925fbcc50a0c123931f935345a1876f8f1325daeedadaf9865060cada19",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Customer Reviews | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "service-areas.html",
+      "url": "https://www.tridentroofingandexteriors.ca/service-areas.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/service-areas.html",
+      "saved_sha256": "d7bfb001d92aead5783ba2e19482e94232f3d6432c1cadf1a18d79cdeb2d6792",
+      "live_sha256": "d7bfb001d92aead5783ba2e19482e94232f3d6432c1cadf1a18d79cdeb2d6792",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Service Areas | Trident Roofing & Exteriors | South & Central Ontario"
+      ]
+    },
+    {
+      "path": "services/eavestroughs.html",
+      "url": "https://www.tridentroofingandexteriors.ca/services/eavestroughs.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/services/eavestroughs.html",
+      "saved_sha256": "fbbdbbe602752d2e8527d878a05102100e8a95555802c06343b790937fac0c1d",
+      "live_sha256": "fbbdbbe602752d2e8527d878a05102100e8a95555802c06343b790937fac0c1d",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Eavestroughs & Gutter Guards | Alu-Rex | Trident Roofing Ontario"
+      ]
+    },
+    {
+      "path": "services/flat-roofing.html",
+      "url": "https://www.tridentroofingandexteriors.ca/services/flat-roofing.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/services/flat-roofing.html",
+      "saved_sha256": "a09882b9b8e594fb676a4b0264090d763df30f2687ae7533d279006f700e1d15",
+      "live_sha256": "a09882b9b8e594fb676a4b0264090d763df30f2687ae7533d279006f700e1d15",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Advanced Flat Roofing Systems | Trident Roofing & Exteriors"
+      ]
+    },
+    {
+      "path": "services/index.html",
+      "url": "https://www.tridentroofingandexteriors.ca/services/index.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/services/index.html",
+      "saved_sha256": "951a6e808dff8a657dbfcc8a584e69a12cc1fbdf26172182e0ba6a96cdd4b46e",
+      "live_sha256": "951a6e808dff8a657dbfcc8a584e69a12cc1fbdf26172182e0ba6a96cdd4b46e",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Exterior Services | Trident Roofing & Exteriors | Ontario"
+      ]
+    },
+    {
+      "path": "services/roofing.html",
+      "url": "https://www.tridentroofingandexteriors.ca/services/roofing.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/services/roofing.html",
+      "saved_sha256": "8bca2384b896fa6cbab796c0016e2e0fe26df332b1bbbb9e7f0c4f3077c17193",
+      "live_sha256": "8bca2384b896fa6cbab796c0016e2e0fe26df332b1bbbb9e7f0c4f3077c17193",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Residential Roofing | London & Central Ontario | Trident Roofing"
+      ]
+    },
+    {
+      "path": "services/siding.html",
+      "url": "https://www.tridentroofingandexteriors.ca/services/siding.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/services/siding.html",
+      "saved_sha256": "c9704bbf4c1fab3d8c735f64bff8bae4c47d504047273c82ed7ce13a3298b9de",
+      "live_sha256": "c9704bbf4c1fab3d8c735f64bff8bae4c47d504047273c82ed7ce13a3298b9de",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Premium Siding Systems | Westlake Royal Certified | Trident Roofing"
+      ]
+    },
+    {
+      "path": "services/skylights.html",
+      "url": "https://www.tridentroofingandexteriors.ca/services/skylights.html",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/services/skylights.html",
+      "saved_sha256": "795f9bd23a3e769d72efe1398e795e7e5826c97f7ca7145e8dd96f97e7e7cc83",
+      "live_sha256": "795f9bd23a3e769d72efe1398e795e7e5826c97f7ca7145e8dd96f97e7e7cc83",
+      "bytes_equal": true,
+      "visible_text_equal": true,
+      "live_title": [
+        "Velux Certified Skylight Installation | Trident Roofing & Exteriors"
+      ]
+    },
+    {
+      "path": "assets/hero_1.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_1.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_1.png",
+      "saved_sha256": "524536d0f516e10fcc1d18643edd01d79b0efe58c1640cbbdac07b235c9a14b8",
+      "live_sha256": "524536d0f516e10fcc1d18643edd01d79b0efe58c1640cbbdac07b235c9a14b8",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/hero_2.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_2.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_2.png",
+      "saved_sha256": "a7cdf6b6b6cd7525f1e6253bfdb347ee87d8c4bbc762c6a1a8e83d60e294d1b2",
+      "live_sha256": "a7cdf6b6b6cd7525f1e6253bfdb347ee87d8c4bbc762c6a1a8e83d60e294d1b2",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/hero_3.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_3.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_3.png",
+      "saved_sha256": "be5d5b553b2e6ec8b66129be48976844f5ae864ba1ded3f58bd3e3aa67aa13c8",
+      "live_sha256": "be5d5b553b2e6ec8b66129be48976844f5ae864ba1ded3f58bd3e3aa67aa13c8",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/hero_4_new.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_4_new.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_4_new.png",
+      "saved_sha256": "c7014cff3cce6bac971b9754130ca6735c02c4e270d3bdfc02dd84c0fb45e995",
+      "live_sha256": "c7014cff3cce6bac971b9754130ca6735c02c4e270d3bdfc02dd84c0fb45e995",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/hero_5.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_5.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_5.png",
+      "saved_sha256": "1c51b10c9eed131358463bbf53e9403fb2d878a0088d74353952ddd4533460de",
+      "live_sha256": "1c51b10c9eed131358463bbf53e9403fb2d878a0088d74353952ddd4533460de",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/hero_6.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_6.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_6.png",
+      "saved_sha256": "bda9c9e58fe859adc07541a48c91786e7db4c74c980a2e8376a7ae1a8a9cf4b2",
+      "live_sha256": "bda9c9e58fe859adc07541a48c91786e7db4c74c980a2e8376a7ae1a8a9cf4b2",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/hero_7.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/hero_7.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/hero_7.png",
+      "saved_sha256": "26fd6c8ea2f93d88cf065ca4f7db2632d5751948a43ba4dab2cfcc0839a58607",
+      "live_sha256": "26fd6c8ea2f93d88cf065ca4f7db2632d5751948a43ba4dab2cfcc0839a58607",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/logo.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/logo.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/logo.png",
+      "saved_sha256": "77dcc624fc3c0efb6173a6015592995297133125c3e684fbdfb154a20445c25c",
+      "live_sha256": "77dcc624fc3c0efb6173a6015592995297133125c3e684fbdfb154a20445c25c",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/roof_after.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/roof_after.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/roof_after.png",
+      "saved_sha256": "9ad92af16b9b4e79af074a8ea70714edaa143bb9498d71ce06328a424601b18e",
+      "live_sha256": "9ad92af16b9b4e79af074a8ea70714edaa143bb9498d71ce06328a424601b18e",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/roof_after_2.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/roof_after_2.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/roof_after_2.png",
+      "saved_sha256": "2fbbd00bc557c56ecbfe17701351048271b01f9cd498ece0588e4c378dd7d851",
+      "live_sha256": "2fbbd00bc557c56ecbfe17701351048271b01f9cd498ece0588e4c378dd7d851",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/roof_after_3.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/roof_after_3.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/roof_after_3.png",
+      "saved_sha256": "362af36494dc1126a93d98af465371ea6230bac449f9286d74189c3136a1e267",
+      "live_sha256": "362af36494dc1126a93d98af465371ea6230bac449f9286d74189c3136a1e267",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/roof_before.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/roof_before.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/roof_before.png",
+      "saved_sha256": "7381875ff4f3a1b5b91474028e826b5b0decd72968f131cd5abf71e57ccb6b36",
+      "live_sha256": "7381875ff4f3a1b5b91474028e826b5b0decd72968f131cd5abf71e57ccb6b36",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/roof_before_2.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/roof_before_2.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/roof_before_2.png",
+      "saved_sha256": "70aa7f3479e144d2573dda9ce612b7e9aa5cbd25c4d126c5e9d5cda04168ce1e",
+      "live_sha256": "70aa7f3479e144d2573dda9ce612b7e9aa5cbd25c4d126c5e9d5cda04168ce1e",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/roof_before_3.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/roof_before_3.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/roof_before_3.png",
+      "saved_sha256": "2eedb437018ef9e836ea7099d42718d128d3ef44ed6b892f094565db8a03f153",
+      "live_sha256": "2eedb437018ef9e836ea7099d42718d128d3ef44ed6b892f094565db8a03f153",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/service_eavestrough_new.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/service_eavestrough_new.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/service_eavestrough_new.png",
+      "saved_sha256": "2b5532377f5c54a4f4f6dfd446bcdeca8dfa03a06cbd0d5809af8e11f2bf481a",
+      "live_sha256": "2b5532377f5c54a4f4f6dfd446bcdeca8dfa03a06cbd0d5809af8e11f2bf481a",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/service_emergency.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/service_emergency.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/service_emergency.png",
+      "saved_sha256": "cf50e61ae7ecb75c0be7b946774c7143bf0ed067da3b918b01e39d4ddac94b5a",
+      "live_sha256": "cf50e61ae7ecb75c0be7b946774c7143bf0ed067da3b918b01e39d4ddac94b5a",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/service_roofing_new.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/service_roofing_new.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/service_roofing_new.png",
+      "saved_sha256": "c3a7bb63907e90528a1e8b1b42fdbf982e21a8c1952dd3ff305bf19aca9dd470",
+      "live_sha256": "c3a7bb63907e90528a1e8b1b42fdbf982e21a8c1952dd3ff305bf19aca9dd470",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/service_siding_new.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/service_siding_new.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/service_siding_new.png",
+      "saved_sha256": "23abcdbf8f82a306ddcbb58a2a1daf5f5e8dbf265e6d7a20575de90842c99930",
+      "live_sha256": "23abcdbf8f82a306ddcbb58a2a1daf5f5e8dbf265e6d7a20575de90842c99930",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/service_skylight.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/service_skylight.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/service_skylight.png",
+      "saved_sha256": "8947ae904bbe4052d1496ee28a31cb002a7f68e872923e42a807b3e7d92ab400",
+      "live_sha256": "8947ae904bbe4052d1496ee28a31cb002a7f68e872923e42a807b3e7d92ab400",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/service_specialty.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/service_specialty.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/service_specialty.png",
+      "saved_sha256": "c5f9ae5fba1da438428bd69da4bd30f3cdc72f7302aa29a43a8f853b83e91f4f",
+      "live_sha256": "c5f9ae5fba1da438428bd69da4bd30f3cdc72f7302aa29a43a8f853b83e91f4f",
+      "bytes_equal": true
+    },
+    {
+      "path": "assets/vector_house.png",
+      "url": "https://www.tridentroofingandexteriors.ca/assets/vector_house.png",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/assets/vector_house.png",
+      "saved_sha256": "33f61d1b03017c7ce921fb7400601154f4ca71adc7b29e2d70ee7be8da2d7919",
+      "live_sha256": "33f61d1b03017c7ce921fb7400601154f4ca71adc7b29e2d70ee7be8da2d7919",
+      "bytes_equal": true
+    },
+    {
+      "path": "css/style.css",
+      "url": "https://www.tridentroofingandexteriors.ca/css/style.css",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/css/style.css",
+      "saved_sha256": "3b193ad542ef1536eaf62b2d13ec25832e0302110aa8735a47b92fab9ef3556c",
+      "live_sha256": "3b193ad542ef1536eaf62b2d13ec25832e0302110aa8735a47b92fab9ef3556c",
+      "bytes_equal": true
+    },
+    {
+      "path": "js/app.js",
+      "url": "https://www.tridentroofingandexteriors.ca/js/app.js",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/js/app.js",
+      "saved_sha256": "bfc67d19b24a5568e8486477201c60b0f225a27d83f256b9e8e6fc31e48b50d9",
+      "live_sha256": "bfc67d19b24a5568e8486477201c60b0f225a27d83f256b9e8e6fc31e48b50d9",
+      "bytes_equal": true
+    },
+    {
+      "path": "js/site-config.js",
+      "url": "https://www.tridentroofingandexteriors.ca/js/site-config.js",
+      "status": 200,
+      "final_url": "https://www.tridentroofingandexteriors.ca/js/site-config.js",
+      "saved_sha256": "e61d3299127840cc0ab9df73d20507494f955f73d56ccccb0907c91149036ce8",
+      "live_sha256": "22766218d90ba9faf001eb0419cf700b1f906f665f43a2168208621803d22ed3",
+      "bytes_equal": false
+    }
+  ],
+  "comparison_date_utc": "2026-11-13",
+  "saved_baseline_commit": "acc2f8aee9269895358d8b658da263f48fff424f"
+}

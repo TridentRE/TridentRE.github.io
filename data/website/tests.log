@@ -1,0 +1,15 @@
+test_all_assets_links_scripts_and_sitemap (test_site.StaticSiteTests.test_all_assets_links_scripts_and_sitemap) ... ok
+test_all_preview_sources_are_noindex_with_recoverable_production_seo (test_site.StaticSiteTests.test_all_preview_sources_are_noindex_with_recoverable_production_seo) ... ok
+test_commercial_scope_navigation_schema_and_ctas (test_site.StaticSiteTests.test_commercial_scope_navigation_schema_and_ctas) ... ok
+test_excessive_relative_reference_is_not_silently_clamped (test_site.StaticSiteTests.test_excessive_relative_reference_is_not_silently_clamped) ... ok
+test_form_contract_remains_unchanged_pending_backend (test_site.StaticSiteTests.test_form_contract_remains_unchanged_pending_backend) ... ok
+test_inline_parser_captures_scripts_json_css_and_handlers (test_site.StaticSiteTests.test_inline_parser_captures_scripts_json_css_and_handlers) ... ok
+test_preview_guard_static_contract (test_site.StaticSiteTests.test_preview_guard_static_contract) ... ok
+test_production_restore_dry_run_changes_no_repository_bytes (test_site.StaticSiteTests.test_production_restore_dry_run_changes_no_repository_bytes) ... ok
+test_production_restore_plan_and_idempotence_in_disposable_fixture (test_site.StaticSiteTests.test_production_restore_plan_and_idempotence_in_disposable_fixture) ... ok
+test_query_strings_fragments_and_same_site_absolute_urls (test_site.StaticSiteTests.test_query_strings_fragments_and_same_site_absolute_urls) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.224s
+
+OK
