@@ -413,6 +413,8 @@ function initServiceModals() {
     const modalBody = document.getElementById('modal-body');
     const closeBtn = document.getElementById('modal-close');
     const triggers = document.querySelectorAll('.service-modal-trigger');
+    // Most informational pages have no modal; keep the remaining page setup running.
+    if (!modal || !modalBody || !closeBtn) return;
 
     const serviceData = {
         'roofing': {
