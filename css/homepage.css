@@ -9,7 +9,7 @@
     isolation: isolate;
 }
 .home-frames { position: absolute; inset: 0; overflow: hidden; z-index: -1; }
-.home-frame { position: absolute; width: 65%; height: 100%; left: 35%; object-fit: contain; opacity: 0; transition: opacity .6s ease; }
+.home-frame { position: absolute; width: 65%; height: 100%; left: 35%; object-fit: cover; opacity: 0; transition: opacity .6s ease; }
 .home-frame.active { opacity: 1; }
 .home-frames::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--hero-bg) 15%, rgba(26,45,58,.88) 42%, rgba(26,45,58,.25)); }
 .home-content { width: min(100%, 1400px); margin: auto; padding: 120px 4rem 2rem; }

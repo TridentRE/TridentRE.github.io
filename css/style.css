@@ -3678,3 +3678,18 @@ body.emergency-mode {
         grid-template-columns: 1fr;
     }
 }
+
+/* Manufacturer wordmarks are local official artwork, not higher-tier certification badges. */
+.manufacturer-logo { display: inline-block; object-fit: contain; background: var(--white); padding: .35rem; border-radius: var(--radius-sm); flex-shrink: 0; vertical-align: middle; }
+.credential-logo { display: block; margin-bottom: 1rem; }
+.siding-options { background: var(--hero-bg); color: var(--white); }
+.siding-options h2 { color: var(--white); margin: 1rem 0; }
+.siding-options p { max-width: 70ch; }
+.siding-options .btn-primary { color: var(--hero-bg); }
+
+/* The siding service shell clears the fixed navigation at both review widths. */
+.siding-page .service-hero { padding: 140px 0 3rem; background: var(--hero-bg); color: var(--white); }
+.siding-page .service-hero h1 { color: var(--white); }
+.siding-page .problem-solution, .siding-page .cta-banner { padding-block: 3rem; }
+.siding-page .problem-solution .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+@media (max-width: 768px) { .siding-page .problem-solution .grid { grid-template-columns: 1fr; } }
