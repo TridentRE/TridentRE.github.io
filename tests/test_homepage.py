@@ -46,7 +46,14 @@ class HomepageTests(unittest.TestCase):
         for unsupported in ('deadline', 'expires', 'deposit', 'warranty', 'certified', 'limited time', '2027', 'November'):
             self.assertNotIn(unsupported, offer)
         self.assertIn('href="contact.html"', offer)
-        self.assertIn('href="services/roofing.html"', offer)
+        self.assertIn('Discuss metal roofing', offer)
+
+    def test_existing_trust_labels_remain_outside_hero(self):
+        strip = re.search(r'<div class="trust-bar homepage-trust-strip".*?</section>', self.html, re.S).group()
+        for label in ('IKO Approved', 'Westlake Royal', 'Velux Specialist', 'Alu-Rex Preferred', 'Insurance Claim Assistance', 'Fully Insured to $5M'):
+            self.assertIn(label, strip)
+        self.assertLess(self.html.index('id="winter-planning"'), self.html.index('homepage-trust-strip'))
+        self.assertNotIn('pc-hero-overlay', self.html)
 
     def test_preview_and_routing_guards_remain(self):
         self.assertIn('<meta name="robots" content="noindex,nofollow">', self.html)

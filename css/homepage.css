@@ -70,3 +70,8 @@
 @media (max-width: 768px) {
     .homepage-page .mobile-hub { right: 1rem; bottom: 4rem; }
 }
+
+/* Former hero-overlay labels stay readable, static and in normal flow. */
+.homepage-trust-strip { background: var(--hero-bg); }
+.homepage-trust-strip .trust-track { flex-wrap: wrap; justify-content: center; gap: 1.5rem 2.5rem; animation: none; padding-right: 1rem; }
+.homepage-trust-strip .trust-item { max-width: 100%; white-space: normal; color: var(--accent-light); filter: none; font-family: inherit; font-size: .8rem; }
