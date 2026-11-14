@@ -1,0 +1,77 @@
+/* Homepage-only: normal flow, never sticky, pinned or scroll-driven. */
+.homepage-hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    background: var(--hero-bg);
+    color: var(--white);
+    isolation: isolate;
+}
+.home-frames { position: absolute; inset: 0; overflow: hidden; z-index: -1; }
+.home-frame { position: absolute; width: 65%; height: 100%; left: 35%; object-fit: contain; opacity: 0; transition: opacity .6s ease; }
+.home-frame.active { opacity: 1; }
+.home-frames::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--hero-bg) 15%, rgba(26,45,58,.88) 42%, rgba(26,45,58,.25)); }
+.home-content { width: min(100%, 1400px); margin: auto; padding: 120px 4rem 2rem; }
+.home-slides { display: grid; max-width: 660px; }
+.home-slide { grid-area: 1 / 1; visibility: hidden; opacity: 0; transition: opacity .6s ease; }
+.home-slide.active { visibility: visible; opacity: 1; }
+.home-slide h2 { color: var(--white); font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.15; margin: .8rem 0 1rem; }
+.home-slide p { color: var(--primary-bg); max-width: 560px; font-size: 1.05rem; }
+.homepage-hero .phase-tag, .winter-planning .phase-tag { color: var(--accent-light); }
+.home-ctas { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
+.homepage-hero .btn-primary, .winter-planning .btn-primary { color: var(--hero-bg); }
+.homepage-hero .btn-secondary { color: var(--white); border-color: var(--accent-light); }
+.home-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: 1.25rem; }
+.home-controls[hidden] { display: none; }
+.home-controls button { min-width: 44px; min-height: 44px; padding: .5rem .8rem; border: 1px solid var(--accent-light); border-radius: var(--radius-sm); background: var(--hero-bg); color: var(--white); font: inherit; cursor: pointer; }
+.home-controls button:hover { background: var(--accent-blue); }
+.home-status { min-width: 3rem; text-align: center; font-variant-numeric: tabular-nums; }
+.homepage-hero :focus-visible, .winter-planning :focus-visible { outline: 3px solid var(--accent-cyan); outline-offset: 4px; }
+.home-trust { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-top: 1rem; font-size: .8rem; color: var(--accent-light); }
+.home-explore { display: inline-flex; gap: .8rem; color: var(--white); margin-top: 1rem; font-size: .85rem; }
+.winter-planning { background: var(--accent-blue); }
+.winter-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 4rem; align-items: center; }
+.winter-planning :is(h2,h3,p) { color: var(--white); }
+.winter-planning h2 { font-size: clamp(1.8rem,3vw,2.6rem); line-height: 1.2; margin: .7rem 0 1rem; }
+.winter-planning h3 { font-size: 1.5rem; line-height: 1.3; margin: .7rem 0 1rem; }
+.winter-planning p { margin-bottom: 1.5rem; }
+.winter-metal { border-left: 1px solid var(--accent-light); padding-left: 3rem; }
+.winter-link { color: var(--white); text-decoration: underline; text-underline-offset: .3rem; }
+@media (max-width: 768px) {
+    .home-content { padding: 110px 1.5rem 1.5rem; }
+    .home-frame { left: 0; width: 100%; object-fit: cover; }
+    .home-frames::after { background: rgba(26,45,58,.88); }
+    .home-slide h2 { font-size: clamp(1.8rem,6vw,2.6rem); }
+    .home-slide p { font-size: .95rem; }
+    .home-ctas .btn { padding: .8rem 1rem; white-space: normal; min-height: 44px; }
+    .winter-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .winter-metal { border-left: 0; border-top: 1px solid var(--accent-light); padding: 2rem 0 0; }
+}
+@media (max-width: 360px) {
+    .home-content { padding-left: 1rem; padding-right: 1rem; }
+    .home-controls { gap: .3rem; }
+    .home-controls button { padding: .5rem; font-size: .85rem; }
+    .winter-planning .btn { white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .homepage-hero *, .winter-planning * { transition: none !important; animation: none !important; }
+}
+
+/* Existing service cards must shrink inside the 320px homepage container. */
+.homepage-page .service-card-premium { min-width: 0; }
+@media (max-width: 400px) {
+    .homepage-page .services-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 400px) {
+    .homepage-page .p-label { width: 160px; }
+}
+@media (max-width: 768px) {
+    .homepage-page .mobile-hub { right: 1rem; bottom: 4rem; }
+}
+
+/* Former hero-overlay labels stay readable, static and in normal flow. */
+.homepage-trust-strip { background: var(--hero-bg); }
+.homepage-trust-strip .trust-track { flex-wrap: wrap; justify-content: center; gap: 1.5rem 2.5rem; animation: none; padding-right: 1rem; }
+.homepage-trust-strip .trust-item { max-width: 100%; white-space: normal; color: var(--accent-light); filter: none; font-family: inherit; font-size: .8rem; }

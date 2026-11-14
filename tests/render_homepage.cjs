@@ -1,0 +1,41 @@
+/* Run: PLAYWRIGHT_MODULE=/path/to/playwright node tests/render_homepage.cjs */
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),http=require('node:http'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),out=process.env.HOMEPAGE_ARTIFACTS||'/workspace/homepage-tools/artifacts';fs.mkdirSync(out,{recursive:true});
+const mime={'.html':'text/html','.css':'text/css','.js':'text/javascript','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml'};
+const server=http.createServer((req,res)=>{try{let pathname=decodeURI(req.url.split('?')[0]);if(pathname.endsWith('/'))pathname+='index.html';const p=path.resolve(root,'.'+pathname);if(!p.startsWith(root+path.sep))return res.writeHead(403).end();res.setHeader('Content-Type',mime[path.extname(p)]||'application/octet-stream');res.end(fs.readFileSync(p))}catch(e){res.writeHead(404).end()}});
+(async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const url="https://tridentre.github.io/";const browser=await chromium.launch({args:['--no-sandbox']});const results=[];
+try{for(const width of [320,390,768,1024,1440]){
+ const page=await browser.newPage({viewport:{width,height:width<500?844:900}});const errors=[],writes=[];
+ page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',route=>{if(!['GET','HEAD'].includes(route.request().method())){writes.push(route.request().url());return route.abort()}if(new URL(route.request().url()).hostname==="tridentre.github.io"){let pathname=new URL(route.request().url()).pathname;if(pathname.endsWith("/"))pathname+="index.html";return route.fulfill({status:200,contentType:mime[path.extname(pathname)]||"application/octet-stream",body:fs.readFileSync(path.join(root,pathname))})}return route.continue()});
+ await page.goto(url,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);
+ const data=await page.evaluate(()=>({width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth,heroHeight:document.querySelector('.homepage-hero').offsetHeight,nextTop:document.querySelector('#winter-planning').getBoundingClientRect().top,position:getComputedStyle(document.querySelector('.homepage-hero')).position,heroColor:getComputedStyle(document.querySelector('.homepage-hero')).backgroundColor,winterColor:getComputedStyle(document.querySelector('.winter-planning')).backgroundColor,preview:!!document.querySelector('#trident-preview-notice'),noindex:document.querySelector('meta[name="robots"]').content,overflow:[...document.querySelectorAll('.homepage-hero *, .winter-planning *, .homepage-trust-strip *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left< -1).map(e=>e.className)}));
+ assert.equal(data.scrollWidth,width);assert.deepEqual(data.overflow,[]);assert.equal(data.heroHeight,data.height);assert.equal(data.nextTop,data.height);assert.equal(data.position,'relative');assert.equal(data.heroColor,'rgb(26, 45, 58)');assert.equal(data.winterColor,'rgb(44, 74, 90)');assert.ok(data.preview);assert.equal(data.noindex,'noindex,nofollow');
+ await page.screenshot({path:`${out}/after-${width}-hero.png`});// Verify ordinary document scrolling reveals existing below-fold content.
+ for(let y=0;y<await page.evaluate(()=>document.documentElement.scrollHeight);y+=500){
+  await page.evaluate(y=>scrollTo({top:y,behavior:'instant'}),y);
+  await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+ }
+ await page.waitForFunction(()=>[...document.querySelectorAll('.reveal')].every(e=>e.classList.contains('active')&&Number(getComputedStyle(e).opacity)===1));
+ data.reveals=await page.locator('.reveal.active').count();
+ await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));
+ await page.screenshot({path:`${out}/after-${width}-full.png`,fullPage:true});
+ // A normal wheel gesture must move the hero out and bring winter content into view.
+ await page.mouse.wheel(0,650);await page.waitForFunction(()=>scrollY>=600);data.afterSwipe=await page.evaluate(()=>({scrollY,nextTop:document.querySelector('#winter-planning').getBoundingClientRect().top,heroTop:document.querySelector('.homepage-hero').getBoundingClientRect().top}));assert.ok(data.afterSwipe.nextTop<innerHeightFor(width));assert.ok(data.afterSwipe.heroTop< -500);await page.screenshot({path:`${out}/after-${width}-normal-scroll.png`});
+ await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));
+ // Keyboard/manual/pause: Enter and Space retain focus and never move the document.
+ const next=page.getByRole('button',{name:'Next slide'});await next.focus();assert.equal(await page.locator('.home-rotation').innerText(),'Play slideshow');await next.press('Enter');assert.equal(await page.locator('.home-status').innerText(),'2 / 7');assert.equal(await next.evaluate(e=>e===document.activeElement),true);await page.getByRole('button',{name:'Previous slide'}).press('Space');assert.equal(await page.locator('.home-status').innerText(),'1 / 7');await page.getByRole('button',{name:'Previous slide'}).press('Enter');assert.equal(await page.locator('.home-status').innerText(),'7 / 7');
+ assert.equal(await page.locator('.home-slide[aria-hidden="false"]').count(),1);assert.equal(await page.locator('.home-frame[aria-hidden="false"]').count(),1);
+ // All seven descriptions fit, with controls below the slide copy.
+ for(let i=0;i<7;i++){await next.press('Enter');assert.ok(await page.locator('.home-slide.active').evaluate(e=>e.getBoundingClientRect().bottom<=document.querySelector('.home-ctas').getBoundingClientRect().top));}
+ if(width<=768){const menu=page.getByRole('button',{name:'Menu',exact:true});await menu.press('Enter');assert.equal(await page.locator('.desktop-nav').evaluate(e=>e.classList.contains('active')),true);await menu.press('Enter');assert.equal(await page.locator('.desktop-nav').evaluate(e=>e.classList.contains('active')),false);}
+ // Clock advances real timer callbacks without making the test wait seven seconds.
+ await page.mouse.move(width-1,899);await page.clock.install();await page.getByRole('button',{name:'Play slideshow',exact:true}).click();await page.mouse.move(width-1,innerHeightFor(width)+5);const before=await page.locator('.home-status').innerText();await page.clock.runFor(7100);assert.notEqual(await page.locator('.home-status').innerText(),before);await page.getByRole('button',{name:'Pause slideshow',exact:true}).click();const paused=await page.locator('.home-status').innerText();await page.clock.runFor(15000);assert.equal(await page.locator('.home-status').innerText(),paused);
+ await page.emulateMedia({reducedMotion:'reduce'});await page.reload({waitUntil:'networkidle'});assert.equal(await page.locator('.home-rotation').innerText(),'Play slideshow');await page.clock.runFor(15000);assert.equal(await page.locator('.home-status').innerText(),'1 / 7');assert.equal(await page.locator('.home-frame').first().evaluate(e=>getComputedStyle(e).transitionDuration),'0s');await page.getByRole('button',{name:'Next slide'}).click();assert.equal(await page.locator('.home-status').innerText(),'2 / 7');
+ assert.deepEqual(errors,[]);assert.deepEqual(writes,[]);results.push({...data,keyboard:true,manual:true,pause:true,autoplay:true,reducedMotion:true,errors,writes});await page.close();
+ }
+ // No JS: initial content and offer remain visible; dead carousel controls stay hidden.
+ const nojs=await browser.newPage({javaScriptEnabled:false,viewport:{width:390,height:844}});await nojs.goto(`http://127.0.0.1:${server.address().port}/`);assert.equal(await nojs.locator('.home-slide.active').isVisible(),true);assert.equal(await nojs.locator('.home-controls').isVisible(),false);assert.equal(await nojs.locator('#winter-title').isVisible(),true);await nojs.close();
+ fs.writeFileSync(`${out}/homepage-results.json`,JSON.stringify(results,null,2));console.log('PASS five widths: full/hero/normal-scroll screenshots, no overflow, one-screen hero, normal wheel, keyboard, all slides, pause/autoplay, reduced motion, mobile menu, preview, no JS, no writes/errors');
+}finally{await browser.close();server.close()}})().catch(e=>{console.error(e);server.close();process.exitCode=1});
+function innerHeightFor(width){return width<500?844:900}

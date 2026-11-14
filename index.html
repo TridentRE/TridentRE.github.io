@@ -85,8 +85,9 @@
     </script>
     <link rel="stylesheet" href="css/style.css?v=142">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/homepage.css?v=1">
 </head>
-<body>
+<body class="homepage-page">
 
     <header class="main-header">
         <div class="header-content">
@@ -114,114 +115,103 @@
     </header>
 
     <main>
-        <!-- Scroll-Hijacked Cinematic Hero -->
-        <section class="hero-runway" id="hero-runway">
-            <div class="hero-sticky">
-                <!-- Animation Frames -->
-                <div class="hero-frames">
-                    <img src="assets/hero_1.png" alt="Aging residential roof before Trident replacement" class="hero-frame active" data-frame="1">
-                    <img src="assets/hero_2.png" alt="Roof tear-off exposing deck for inspection" class="hero-frame" data-frame="2">
-                    <img src="assets/hero_3.png" alt="Ice and water shield underlayment installation" class="hero-frame" data-frame="3">
-                    <img src="assets/hero_4_new.png" alt="Architectural shingle installation in progress" class="hero-frame" data-frame="4">
-                    <img src="assets/hero_5.png" alt="Completed premium roofing system" class="hero-frame" data-frame="5">
-                    <img src="assets/hero_6.png" alt="Insulated siding installation on Ontario home" class="hero-frame" data-frame="6">
-                    <img src="assets/hero_7.png" alt="Seamless eavestrough and gutter system install" class="hero-frame" data-frame="7">
+        <!-- One-screen carousel: scroll remains normal document flow. -->
+        <section class="homepage-hero" id="homepage-hero" role="region" aria-roledescription="carousel" aria-label="Roofing and exterior services">
+            <div class="home-frames">
+                    <img src="assets/hero_1.png" alt="Aging residential roof before Trident replacement" class="home-frame active" data-frame="1" aria-hidden="false">
+                    <img src="assets/hero_2.png" alt="Roof tear-off exposing deck for inspection" class="home-frame" data-frame="2" aria-hidden="true">
+                    <img src="assets/hero_3.png" alt="Ice and water shield underlayment installation" class="home-frame" data-frame="3" aria-hidden="true">
+                    <img src="assets/hero_4_new.png" alt="Architectural shingle installation in progress" class="home-frame" data-frame="4" aria-hidden="true">
+                    <img src="assets/hero_5.png" alt="Completed premium roofing system" class="home-frame" data-frame="5" aria-hidden="true">
+                    <img src="assets/hero_6.png" alt="Insulated siding installation on Ontario home" class="home-frame" data-frame="6" aria-hidden="true">
+                    <img src="assets/hero_7.png" alt="Seamless eavestrough and gutter system install" class="home-frame" data-frame="7" aria-hidden="true">
                 </div>
-
-                <div class="hero-overlay">
-                    <h1 class="sr-only">Trident Roofing &amp; Exteriors — Premium Roofing and Exterior Contractor in Ontario</h1>
-                    <div class="hero-phases-area">
-                        <div class="hero-phase active" data-phase="1">
+            <div class="home-content">
+                <h1 class="sr-only">Trident Roofing &amp; Exteriors — Premium Roofing and Exterior Contractor in Ontario</h1>
+                <div class="home-slides" id="home-slides" aria-live="off">
+                        <div class="home-slide active" data-phase="1" role="group" aria-roledescription="slide" aria-label="1 of 7" aria-hidden="false">
                             <span class="phase-tag">Protect Your Family</span>
                             <h2>Your Roof is Your <br><span class="text-accent">First Line of Defense</span></h2>
                             <p>Don't wait for expensive leaks or catastrophic damage. A premium roofing system protects your biggest investment and gives you peace of mind.</p>
                         </div>
-                        <div class="hero-phase" data-phase="2">
+                        <div class="home-slide" data-phase="2" role="group" aria-roledescription="slide" aria-label="2 of 7" aria-hidden="true">
                             <span class="phase-tag">Long-Term Savings</span>
                             <h2>An Investment That <br><span class="text-accent">Pays Off</span></h2>
                             <p>We do things differently. While others cut corners, our engineered systems are built to last, preventing costly future repairs and improving your monthly efficiency.</p>
                         </div>
-                        <div class="hero-phase" data-phase="3">
+                        <div class="home-slide" data-phase="3" role="group" aria-roledescription="slide" aria-label="3 of 7" aria-hidden="true">
                             <span class="phase-tag">Appreciate Your Home</span>
                             <h2>Increase Your <br><span class="text-accent">Property Value</span></h2>
                             <p>A high-performance exterior transformation dramatically improves curb appeal and instantly increases the resale value of your home.</p>
                         </div>
-                        <div class="hero-phase" data-phase="4">
+                        <div class="home-slide" data-phase="4" role="group" aria-roledescription="slide" aria-label="4 of 7" aria-hidden="true">
                             <span class="phase-tag">Precision Craftsmanship</span>
                             <h2>Built Right, <br><span class="text-accent">The First Time</span></h2>
                             <p>We’re not the cheapest, and that’s intentional. We focus on long-term value through quality materials, leading installation methods, and exterior systems built to last.</p>
                         </div>
-                        <div class="hero-phase" data-phase="5">
+                        <div class="home-slide" data-phase="5" role="group" aria-roledescription="slide" aria-label="5 of 7" aria-hidden="true">
                             <span class="phase-tag">Peace of Mind</span>
                             <h2>Fully Licensed & <br><span class="text-accent">Insured Protection</span></h2>
                             <p>Work with confidence knowing your home is protected by a fully insured team backed by $5,000,000 in liability coverage and strong workmanship and manufacturer warranties.</p>
                         </div>
-                        <div class="hero-phase" data-phase="6">
+                        <div class="home-slide" data-phase="6" role="group" aria-roledescription="slide" aria-label="6 of 7" aria-hidden="true">
                             <span class="phase-tag">Insurance Claim Assistance</span>
                             <h2>Storm Damage & <br><span class="text-accent">Insurance Support</span></h2>
                             <p>Dealing with storm damage or active leaks? We provide inspections, emergency protection, and insurance claim support to help simplify the process.</p>
                         </div>
-                        <div class="hero-phase" data-phase="7">
+                        <div class="home-slide" data-phase="7" role="group" aria-roledescription="slide" aria-label="7 of 7" aria-hidden="true">
                             <span class="phase-tag">Total Enclosure</span>
                             <h2>Engineered To <br><span class="text-accent">Outlast</span></h2>
                             <p>From roofing and ventilation to siding and drainage, we build exterior systems that work together to protect your home from Ontario weather.</p>
                         </div>
-                    </div>
-
-                    <div class="hero-ctas">
+                </div>
+                <div class="home-ctas">
                         <a href="contact.html" class="btn btn-primary">Free Consultation <i class="fas fa-chevron-right"></i></a>
                         <a href="tel:2266800996" class="btn btn-secondary">24/7 Response</a>
                     </div>
-
-                    <div class="scroll-hint" id="scroll-hint">
-                        <span class="scroll-text">Scroll to Explore</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-
-                    <div class="hero-trust">
+                <div class="home-controls" aria-label="Slideshow controls" hidden>
+                    <button type="button" class="home-rotation" aria-controls="home-slides">Pause slideshow</button>
+                    <button type="button" class="home-prev" aria-label="Previous slide" aria-controls="home-slides">←</button>
+                    <span class="home-status" aria-live="off">1 / 7</span>
+                    <button type="button" class="home-next" aria-label="Next slide" aria-controls="home-slides">→</button>
+                </div>
+                <div class="home-trust">
                         <span><i class="fas fa-check-circle"></i> Fully Insured</span>
                         <span><i class="fas fa-check-circle"></i> Certified Installation</span>
                         <span><i class="fas fa-check-circle"></i> Canadian-First</span>
                     </div>
+                <a class="home-explore" href="#winter-planning">Explore below <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+        <section class="winter-planning section-padding" id="winter-planning" aria-labelledby="winter-title">
+            <div class="container winter-layout">
+                <div>
+                    <span class="phase-tag">Winter planning. Spring roofing.</span>
+                    <h2 id="winter-title">Book your spring roof now.<br><span class="text-accent">Save 5%.</span></h2>
+                    <p>Planning a new roof for spring? Book now and get 5% off your spring roof.</p>
+                    <a href="contact.html" class="btn btn-primary">Book Your Spring Roof <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
                 </div>
-
-                <!-- Progress Indicator -->
-                <div class="hero-progress">
-                    <div class="hero-progress-bar" id="hero-progress-bar"></div>
-                </div>
-                <div class="hero-phase-dots">
-                    <div class="phase-dot active" data-dot="1"></div>
-                    <div class="phase-dot" data-dot="2"></div>
-                    <div class="phase-dot" data-dot="3"></div>
-                    <div class="phase-dot" data-dot="4"></div>
-                    <div class="phase-dot" data-dot="5"></div>
-                    <div class="phase-dot" data-dot="6"></div>
-                    <div class="phase-dot" data-dot="7"></div>
-                </div>
-                <!-- Infinite Trust Scroll (Option 5) - Hero Overlay -->
-                <div class="trust-bar pc-hero-overlay">
-                    <div class="trust-scroll-container">
-                        <div class="trust-track">
-                            <div class="trust-item"><i class="fas fa-shield-halved"></i> IKO Approved</div>
-                            <div class="trust-item"><i class="fas fa-crown"></i> Westlake Royal</div>
-                            <div class="trust-item"><i class="fas fa-window-maximize"></i> Velux Specialist</div>
-                            <div class="trust-item"><i class="fas fa-water"></i> Alu-Rex Preferred</div>
-                            <div class="trust-item"><i class="fas fa-file-invoice-dollar"></i> Insurance Claim Assistance</div>
-                            <div class="trust-item"><i class="fas fa-check-circle"></i> Fully Insured to $5M</div>
-                            <!-- Duplicate for infinite loop -->
-                            <div class="trust-item"><i class="fas fa-shield-halved"></i> IKO Approved</div>
-                            <div class="trust-item"><i class="fas fa-crown"></i> Westlake Royal</div>
-                            <div class="trust-item"><i class="fas fa-window-maximize"></i> Velux Specialist</div>
-                            <div class="trust-item"><i class="fas fa-water"></i> Alu-Rex Preferred</div>
-                            <div class="trust-item"><i class="fas fa-file-invoice-dollar"></i> Insurance Claim Assistance</div>
-                            <div class="trust-item"><i class="fas fa-check-circle"></i> Fully Insured to $5M</div>
-                        </div>
-                    </div>
-                </div>
-                    </div>
+                <div class="winter-metal">
+                    <span class="phase-tag">Metal roofing, year-round</span>
+                    <h3>Metal roofing isn't just for spring.</h3>
+                    <p>Considering a metal roof? Talk with Trident about metal roofing any time of year.</p>
+                    <a href="contact.html" class="winter-link">Discuss metal roofing <span aria-hidden="true">→</span></a>
                 </div>
             </div>
         </section>
+
+
+        <!-- Existing trust labels preserved in normal document flow. -->
+        <div class="trust-bar homepage-trust-strip" aria-label="Trident credentials and partners">
+            <div class="container trust-track">
+                <div class="trust-item"><i class="fas fa-shield-halved"></i> IKO Approved</div>
+                <div class="trust-item"><i class="fas fa-crown"></i> Westlake Royal</div>
+                <div class="trust-item"><i class="fas fa-window-maximize"></i> Velux Specialist</div>
+                <div class="trust-item"><i class="fas fa-water"></i> Alu-Rex Preferred</div>
+                <div class="trust-item"><i class="fas fa-file-invoice-dollar"></i> Insurance Claim Assistance</div>
+                <div class="trust-item"><i class="fas fa-check-circle"></i> Fully Insured to $5M</div>
+            </div>
+        </div>
 
         <!-- Section Moved Below -->
 
@@ -785,6 +775,7 @@
     </div>
 
     <script src="js/site-config.js"></script>
-    <script src="js/app.js?v=96"></script>
+    <script src="js/app.js?v=97"></script>
+    <script src="js/homepage-carousel.js?v=1"></script>
 </body>
 </html>

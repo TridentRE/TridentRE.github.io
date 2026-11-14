@@ -2,7 +2,7 @@
 function initParallax() {
     const items = document.querySelectorAll('.parallax-bg');
     const mobileHub = document.querySelector('.mobile-hub');
-    const hero = document.getElementById('hero-runway');
+    const hero = document.getElementById('homepage-hero');
     if (items.length === 0 && !mobileHub) return;
 
     window.addEventListener('scroll', () => {
@@ -31,7 +31,6 @@ function initParallax() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initHeroAnimation();
     initEmergencyMode();
     initPortfolioCarousel();
     initRoofQuiz();
@@ -45,78 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticButtons();
     initBlueprintHotspots();
 });
-
-/**
- * Scroll-Hijacked Cinematic Hero Animation
- * Pins the hero viewport and crossfades through 5 illustration frames
- * based on scroll progress through a 500vh tall "runway" section.
- */
-function initHeroAnimation() {
-    const runway = document.getElementById('hero-runway');
-    if (!runway) return;
-
-    const frames = document.querySelectorAll('.hero-frame');
-    const phases = document.querySelectorAll('.hero-phase');
-    const dots = document.querySelectorAll('.phase-dot');
-    const progressBar = document.getElementById('hero-progress-bar');
-    const scrollHint = document.getElementById('scroll-hint');
-    const totalPhases = frames.length;
-    
-    let lastPhase = -1;
-
-
-    function updateHero() {
-        const rect = runway.getBoundingClientRect();
-        const runwayHeight = runway.offsetHeight;
-        const viewportHeight = window.innerHeight;
-        
-        // How far we've scrolled into the runway (0 to 1)
-        const scrolled = -rect.top;
-        const maxScroll = runwayHeight - viewportHeight;
-        const progress = Math.max(0, Math.min(1, scrolled / maxScroll));
-        
-        // Map progress to phase (1-indexed)
-        const currentPhase = Math.min(totalPhases, Math.floor(progress * totalPhases) + 1);
-        
-        // Update progress bar
-        if (progressBar) {
-            progressBar.style.height = `${progress * 100}%`;
-        }
-        
-        // Never hide scroll hint as per user request for persistence
-        if (scrollHint) {
-            scrollHint.classList.toggle('hidden', false);
-        }
-        
-        // Only update DOM if phase changed
-        if (currentPhase !== lastPhase) {
-            lastPhase = currentPhase;
-            
-            // Crossfade frames
-            frames.forEach(f => {
-                const frameNum = parseInt(f.dataset.frame);
-                f.classList.toggle('active', frameNum === currentPhase);
-            });
-            
-            // Switch text phases
-            phases.forEach(p => {
-                const phaseNum = parseInt(p.dataset.phase);
-                p.classList.toggle('active', phaseNum === currentPhase);
-            });
-            
-            // Update dots
-            dots.forEach(d => {
-                const dotNum = parseInt(d.dataset.dot);
-                d.classList.toggle('active', dotNum === currentPhase);
-            });
-        }
-        
-        requestAnimationFrame(updateHero);
-    }
-    
-    requestAnimationFrame(updateHero);
-}
-
 
 /**
  * REVEAL ANIMATIONS
