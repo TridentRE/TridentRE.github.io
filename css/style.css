@@ -3680,7 +3680,9 @@ body.emergency-mode {
 }
 
 /* Manufacturer wordmarks are local official artwork, not higher-tier certification badges. */
-.manufacturer-logo { display: inline-block; object-fit: contain; background: var(--white); padding: .35rem; border-radius: var(--radius-sm); flex-shrink: 0; vertical-align: middle; }
+.manufacturer-logo { display: inline-block; object-fit: contain; object-position: left center; background: none; padding: 0; flex-shrink: 0; vertical-align: middle; height: 1.5rem; width: auto; }
+@media (max-width: 768px) { .trust-item .manufacturer-logo { height: 2rem; } }
+.credential-logo { height: 2.5rem; }
 .credential-logo { display: block; margin-bottom: 1rem; }
 .siding-options { background: var(--hero-bg); color: var(--white); }
 .siding-options h2 { color: var(--white); margin: 1rem 0; }
