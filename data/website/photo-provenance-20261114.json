@@ -1,0 +1,103 @@
+{
+  "approval_scope": "Garnet approved gbp_winter final/real and final/ai set, confirmed 2026-11-14. No new raw Connecteam photo selections.",
+  "photos": [
+    {
+      "asset": "approved-roof-shingles.webp",
+      "source": "gbp_winter/final/real/09_2486_39.jpg",
+      "usage": "Hero 1; card derivative for roofing."
+    },
+    {
+      "asset": "approved-siding-sunset.webp",
+      "source": "gbp_winter/final/real/06_siding_sunset_retouched.png",
+      "usage": "Hero 2; pre-approved retouched photo."
+    },
+    {
+      "asset": "approved-siding-wall.webp",
+      "source": "gbp_winter/final/real/11_siding_wall_retouched.png",
+      "usage": "Hero 3; siding card derivative; pre-approved retouched photo."
+    },
+    {
+      "asset": "approved-roof-deck.webp",
+      "source": "gbp_winter/final/real/05_1716_22.jpg",
+      "usage": "Hero 4, work in progress."
+    },
+    {
+      "asset": "approved-bungalow.webp",
+      "source": "gbp_winter/final/real/01_1764_03.jpg",
+      "usage": "Hero 5; cropped to (60,280,875,630) to exclude house number and trailer."
+    },
+    {
+      "asset": "approved-attic-framing.webp",
+      "source": "gbp_winter/final/real/04_1764_43.jpg",
+      "usage": "Hero 6; attic framing, not a finished roof."
+    },
+    {
+      "asset": "approved-soffit.webp",
+      "source": "gbp_winter/final/real/08_1764_14.jpg",
+      "usage": "Hero 7; soffit card derivative on roofline/drainage service."
+    },
+    {
+      "asset": "approved-attic-insulation-card.webp",
+      "source": "gbp_winter/final/ai/attic_insulation.webp",
+      "usage": "Specialty card, approved AI illustration; no claim this is a Trident job."
+    },
+    {
+      "asset": "approved-ice-dam-card.webp",
+      "source": "gbp_winter/final/ai/ice_dam.webp",
+      "usage": "Emergency card, approved AI illustration; no claim this is a Trident job."
+    }
+  ],
+  "logos": {
+    "iko-logo.svg": "https://www.iko.com/na/wp-content/uploads/2024/04/Logo-1.svg",
+    "gaf-logo.svg": "https://www.gaf.com/en-us (official header mobile SVG, extracted unchanged)"
+  },
+  "not_from_approved_set_retained": [
+    {
+      "asset": "service_skylight.png",
+      "reason": "No approved matching skylight photo."
+    },
+    {
+      "asset": "vector_house.png",
+      "reason": "Existing system diagram; no approved matching diagram."
+    },
+    {
+      "asset": "roof_before.png",
+      "reason": "Portfolio change deferred by Garnet; existing before/after slider unchanged."
+    },
+    {
+      "asset": "roof_after.png",
+      "reason": "Portfolio change deferred by Garnet; existing before/after slider unchanged."
+    },
+    {
+      "asset": "roof_before_2.png",
+      "reason": "Portfolio change deferred by Garnet; existing before/after slider unchanged."
+    },
+    {
+      "asset": "roof_after_2.png",
+      "reason": "Portfolio change deferred by Garnet; existing before/after slider unchanged."
+    },
+    {
+      "asset": "roof_before_3.png",
+      "reason": "Portfolio change deferred by Garnet; existing before/after slider unchanged."
+    },
+    {
+      "asset": "roof_after_3.png",
+      "reason": "Portfolio change deferred by Garnet; existing before/after slider unchanged."
+    }
+  ],
+  "future_portfolio_suggestions": {
+    "Roofing": [
+      "real/09_2486_39.jpg",
+      "real/05_1716_22.jpg (label work in progress)"
+    ],
+    "Siding": [
+      "real/06_siding_sunset_retouched.png",
+      "real/11_siding_wall_retouched.png"
+    ],
+    "Soffit and exteriors": [
+      "real/08_1764_14.jpg",
+      "real/07_1764_23.jpg"
+    ],
+    "notes": "No town, customer, address or before/after pairing can be established from these approved files alone. Do not use approved AI as evidence of real jobs. No approved completed metal roof or cedar shake photo."
+  }
+}

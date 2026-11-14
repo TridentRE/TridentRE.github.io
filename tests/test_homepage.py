@@ -34,7 +34,7 @@ class HomepageTests(unittest.TestCase):
         self.assertIn('class="home-controls" aria-label="Slideshow controls" hidden', self.html)
         for name in ('Pause slideshow', 'Previous slide', 'Next slide'):
             self.assertIn(name, self.html)
-        for feature in ('prefers-reduced-motion: reduce', "hero.addEventListener('focusin', pause)", "document.addEventListener('visibilitychange', sync)", "hero.addEventListener('mouseenter'", 'IntersectionObserver'):
+        for feature in ('prefers-reduced-motion: reduce', "hero.addEventListener('focusin', pause)", "document.addEventListener('visibilitychange', sync)", "hero.addEventListener('pointerenter'", 'IntersectionObserver'):
             self.assertIn(feature, self.js)
         self.assertIn('aria-hidden', self.js)
         self.assertIn(':focus-visible', self.css)
@@ -50,7 +50,7 @@ class HomepageTests(unittest.TestCase):
 
     def test_existing_trust_labels_remain_outside_hero(self):
         strip = re.search(r'<div class="trust-bar homepage-trust-strip".*?</section>', self.html, re.S).group()
-        for label in ('IKO Approved', 'Westlake Royal', 'Velux Specialist', 'Alu-Rex Preferred', 'Insurance Claim Assistance', 'Fully Insured to $5M'):
+        for label in ('IKO Certified Contractor', 'GAF Certified', 'Westlake Royal', 'Velux Specialist', 'Alu-Rex Preferred', 'Insurance Claim Assistance', 'Fully Insured to $5M'):
             self.assertIn(label, strip)
         self.assertLess(self.html.index('id="winter-planning"'), self.html.index('homepage-trust-strip'))
         self.assertNotIn('pc-hero-overlay', self.html)

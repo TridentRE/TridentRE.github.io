@@ -16,7 +16,7 @@ The live domain is not changed by this branch.
 ```sh
 python scripts/validate_site.py --output data/website/validation-after.json
 python -m unittest discover -s tests -v
-node --test scripts/website-form.test.cjs
+node --test scripts/*.test.cjs
 python scripts/prepare-production.py  # dry run, no writes
 ```
 
@@ -24,3 +24,18 @@ python scripts/prepare-production.py  # dry run, no writes
 production-host form routing. It does not publish, deploy a backend or alter DNS.
 Run it only for an approved production release. Production backend deployment,
 notification activation, DNS zone backup, HTTPS checks and owner approval are separate gates.
+
+## Visual feedback regression
+
+With Playwright and Chromium installed outside the static site:
+
+```sh
+PLAYWRIGHT_MODULE=/path/to/playwright FEEDBACK_ARTIFACTS=/path/to/output node tests/render_feedback.cjs
+```
+
+This reads the local checkout through a browser route for the preview hostname, blocks
+non-GET requests, times two real slide changes at 390px and 1440px, and saves page
+screenshots. It also checks hover, focus, pause, manual controls, reduced motion,
+preview noindex, image loading and horizontal overflow. No forms are submitted.
+Photo approval sources and deliberately retained assets are recorded in
+`data/website/photo-provenance-20261114.json`.

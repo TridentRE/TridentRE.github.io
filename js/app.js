@@ -359,14 +359,14 @@ function initServiceModals() {
         },
         'siding': {
             title: 'Premium Cladding Systems',
-            subtitle: 'Thermal Performance & Curb Appeal',
-            description: 'Westlake Royal certified siding systems that provide superior insulation and moisture management while completely transforming your home\'s aesthetic.',
+            subtitle: 'Natural Texture & Curb Appeal',
+            description: 'Choose from Westlake Royal certified systems, cedar shake and wood siding options. We help you compare the finish, moisture protection and maintenance needs of each.',
             features: [
-                'Rigid Foam Backing: Improved R-value and impact resistance.',
-                'Advanced House Wrap: Prevents trapped moisture and rot.',
-                'Precision Trim Work: Clean corners and architectural details.',
-                'Fade-Resistant Colors: UV-stable technology.',
-                'Low Maintenance: Never paint your home again.'
+                'Westlake Royal Systems: Insulated cladding options with fitted trim.',
+                'Cedar Shake: Natural texture for feature areas or a full exterior.',
+                'Wood Siding: Profiles and finishes to suit your home.',
+                'Moisture Management: Careful house wrap, flashing and transitions.',
+                'Clear Maintenance Advice: Care requirements for the material you choose.'
             ],
             cta: 'Schedule a Siding Consultation'
         },
