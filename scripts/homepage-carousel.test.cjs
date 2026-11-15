@@ -16,14 +16,17 @@ function setup({touch=false,reduced=false}={}){
  document.getElementById=()=>hero;document.hidden=false;
  const motion=element(),fine=element();motion.matches=reduced;fine.matches=!touch;
  let interval=null,starts=0,observer;
+ frames.forEach((f,i)=>{f.dataset=i?{src:`frame-${i+1}.webp`}:{};});
+ const winEvents={};
  const window={matchMedia:q=>q.includes('reduced-motion')?motion:fine,
+  addEventListener:(n,f)=>winEvents[n]=f,
   setInterval(fn,ms){interval={fn,ms};starts++;return starts;},
   clearInterval(){interval=null;}
  };
  class IntersectionObserver {constructor(fn,options){observer=fn;assert.equal(options.threshold,0);} observe(){}}
  window.IntersectionObserver=IntersectionObserver;
  vm.runInNewContext(source,{window,document,IntersectionObserver});
- return {hero,document,elements,motion,fine,slides,frames,
+ return {hero,document,elements,motion,fine,slides,frames,winEvents,
   timer:()=>interval,starts:()=>starts,
   tick(){interval?.fn();},
   visible(v){observer([{isIntersecting:v}]);}
@@ -54,4 +57,14 @@ test('focus and pause button pause, manual controls remain usable',()=>{
 test('reduced motion defaults to manual navigation',()=>{
  const s=setup({reduced:true});assert.equal(s.timer(),null);
  s.elements['.home-next'].fire('click');assert.equal(s.elements['.home-status'].textContent,'2 / 7');
+});
+
+test('frames after the first load lazily: current and next on show, all after page load',()=>{
+ const c=setup();
+ assert.equal(c.frames[0].src,undefined);
+ assert.equal(c.frames[1].src,'frame-2.webp');
+ assert.equal(c.frames[2].src,undefined);
+ c.tick();
+ assert.equal(c.frames[2].src,'frame-3.webp');
+ assert.equal(typeof c.winEvents.load,'function');
 });

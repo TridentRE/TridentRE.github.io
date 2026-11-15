@@ -4,7 +4,9 @@
    Style: UI UX PRO MAX STANDARDS (v3.1 — Light Mode)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Lexend:wght@300;400;600;800&display=swap');
+/* Self-hosted variable fonts (latin), was a render-blocking Google Fonts @import. */
+@font-face { font-family: 'Outfit'; font-style: normal; font-weight: 300 800; font-display: swap; src: url('../assets/fonts/outfit-latin.woff2') format('woff2'); }
+@font-face { font-family: 'Lexend'; font-style: normal; font-weight: 300 800; font-display: swap; src: url('../assets/fonts/lexend-latin.woff2') format('woff2'); }
 
 :root {
     /* Light Logo-Derived Palette */
