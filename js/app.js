@@ -346,8 +346,8 @@ function initServiceModals() {
     const serviceData = {
         'roofing': {
             title: 'Advanced Roofing Systems',
-            subtitle: 'Engineered for Ontario\'s Extremes',
-            description: 'Our roofing systems go beyond simple shingle replacement. We engineer a multi-layered shield designed to withstand heavy snow loads, high winds, and rapid freeze-thaw cycles.',
+            subtitle: 'Built for Ontario\'s Extremes',
+            description: 'Our roofing systems go beyond simple shingle replacement. We install a multi-layered shield designed to withstand heavy snow loads, high winds, and rapid freeze-thaw cycles.',
             features: [
                 'Full Tear-Off: We strip to the deck to inspect for rot.',
                 'Ice & Water Shield: Critical protection for valleys and eaves.',
@@ -411,10 +411,10 @@ function initServiceModals() {
         },
         'emergency': {
             title: 'Storm Response & Insurance',
-            subtitle: '24/7 Protection & Claim Assistance',
-            description: 'Active leak or storm damage? We provide 24/7 emergency mitigation and full insurance claim assistance to ensure you are fully covered and stress-free.',
+            subtitle: 'Emergency Response & Claim Assistance',
+            description: 'Active leak or storm damage? We provide emergency mitigation, including after hours, and full insurance claim assistance to ensure you are fully covered and stress-free.',
             features: [
-                '24/7 Dispatch: Rapid response to prevent interior damage.',
+                'Emergency Dispatch: Rapid response, including after hours, to prevent interior damage.',
                 'Temporary Tarping: Secure your roof immediately.',
                 'Comprehensive Inspection: Full documentation of storm damage.',
                 'Claim Assistance: We work directly with your adjuster.',
@@ -690,7 +690,7 @@ function initBlueprintHotspots() {
             const title = item.getAttribute('data-title');
             if(detail && modalBody && modal) {
                 modalBody.innerHTML = `
-                    <div class="modal-subtitle" style="color: var(--accent-orange); font-weight: 600; margin-bottom: 0.5rem;">Trident Engineering Standard</div>
+                    <div class="modal-subtitle" style="color: var(--accent-orange); font-weight: 600; margin-bottom: 0.5rem;">Trident Quality &amp; Build Standard</div>
                     <h2 style="margin-bottom: 1rem;">${title}</h2>
                     <p style="margin-bottom: 2rem;">${detail}</p>
                     <button class="btn btn-primary modal-cta" onclick="document.getElementById('service-modal').classList.remove('active'); document.body.style.overflow = '';">Got it <i class="fas fa-check"></i></button>

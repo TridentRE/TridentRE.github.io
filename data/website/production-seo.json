@@ -1,5 +1,5 @@
 {
-  "robots_txt": "User-agent: *\r\nAllow: /\r\n\r\nSitemap: https://tridentroofingandexteriors.ca/sitemap.xml\r\n",
+  "robots_txt": "User-agent: *\r\nAllow: /\r\n\r\nSitemap: https://www.tridentroofingandexteriors.ca/sitemap.xml\r\n",
   "html_robots": {
     "areas/arthur.html": "<meta name=\"robots\" content=\"index, follow\">",
     "areas/aylmer.html": "<meta name=\"robots\" content=\"index, follow\">",

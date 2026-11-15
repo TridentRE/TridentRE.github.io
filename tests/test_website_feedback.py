@@ -9,7 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 class WebsiteFeedbackTests(unittest.TestCase):
     def test_hero_and_replaced_cards_have_approved_local_sources(self):
         html = (ROOT/'index.html').read_text()
-        frames = re.findall(r'<img src="assets/([^"]+)"[^>]+class="home-frame',html)
+        frames = re.findall(r'<img [^>]*?(?:data-)?src="assets/([^"]+)"[^>]+class="home-frame',html)
+        # Only the first frame loads eagerly; the rest wait for the carousel (speed fix 2026-11-15).
+        self.assertEqual(len(re.findall(r'<img [^>]*? src="assets/approved-[^"]+"[^>]+class="home-frame',html)),1)
         self.assertEqual(len(frames),7)
         self.assertTrue(all(name.startswith('approved-') for name in frames))
         manifest = json.loads((ROOT/'data/website/photo-provenance-20261114.json').read_text())

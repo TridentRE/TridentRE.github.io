@@ -26,8 +26,12 @@
             if (timer === null) timer = window.setInterval(() => show(current + 1), intervalMs);
         } else stopTimer();
     }
+    // Frames 2+ carry data-src so they do not compete with the first paint.
+    function load(frame) { if (frame && frame.dataset && frame.dataset.src) { frame.src = frame.dataset.src; delete frame.dataset.src; } }
+    window.addEventListener("load", () => setTimeout(() => frames.forEach(load), 1500), { once: true });
     function show(index) {
         current = (index + slides.length) % slides.length;
+        load(frames[current]); load(frames[(current + 1) % frames.length]);
         [slides, frames].forEach(items => items.forEach((item, i) => {
             item.classList.toggle('active', i === current);
             item.setAttribute('aria-hidden', String(i !== current));
