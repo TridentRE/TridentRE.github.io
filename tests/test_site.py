@@ -38,13 +38,13 @@ class StaticSiteTests(unittest.TestCase):
         self.assertEqual(page.handlers, ["return false"])
         self.assertIn(("style", "url", "img.png"), page.refs)
 
-    def test_all_preview_sources_are_noindex_with_recoverable_production_seo(self):
+    def test_all_pages_restore_recorded_production_seo(self):
         manifest = json.loads((ROOT / "data/website/production-seo.json").read_text())
         files = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*.html") if ".git" not in p.parts}
         self.assertEqual(files, set(manifest["html_robots"]))
         for relative in files:
-            self.assertIn('<meta name="robots" content="noindex,nofollow">', (ROOT / relative).read_text(), relative)
-        self.assertEqual((ROOT / "robots.txt").read_text(), "User-agent: *\nDisallow: /\n")
+            self.assertIn(manifest["html_robots"][relative], (ROOT / relative).read_text(), relative)
+        self.assertEqual((ROOT / "robots.txt").read_bytes(), manifest["robots_txt"].encode())
         self.assertIn("Sitemap:", manifest["robots_txt"])
 
     def test_production_restore_dry_run_changes_no_repository_bytes(self):

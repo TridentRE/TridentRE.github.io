@@ -55,10 +55,10 @@ class HomepageTests(unittest.TestCase):
         self.assertLess(self.html.index('id="winter-planning"'), self.html.index('homepage-trust-strip'))
         self.assertNotIn('pc-hero-overlay', self.html)
 
-    def test_preview_and_routing_guards_remain(self):
-        self.assertIn('<meta name="robots" content="noindex,nofollow">', self.html)
+    def test_production_release_and_routing(self):
+        self.assertIn('<meta name="robots" content="index, follow">', self.html)
         self.assertIn('<script src="js/site-config.js"></script>', self.html)
-        self.assertIn("releaseMode: 'preview'", (ROOT / 'js/site-config.js').read_text())
+        self.assertIn("releaseMode: 'production'", (ROOT / 'js/site-config.js').read_text())
 
 if __name__ == '__main__':
     unittest.main()

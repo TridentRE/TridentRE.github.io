@@ -90,12 +90,12 @@ class CommercialStyleTests(unittest.TestCase):
         self.assertEqual(len(ctas), 2)
         self.assertTrue(all(a['href'] == '/contact.html?project=commercial#consultation-form' for a in ctas))
 
-    def test_shared_header_footer_are_unchanged_and_preview_guards_remain(self):
+    def test_shared_header_footer_are_unchanged_and_production_seo_set(self):
         roofing = (ROOT / 'services/roofing.html').read_text()
         header = lambda source: re.search(r'<header\b.*?</header>', source, re.S).group()
         self.assertEqual(header(self.source), header(roofing))
         self.assertIn('<footer class="main-footer">', self.source)
-        self.assertIn('<meta name="robots" content="noindex,nofollow">', self.source)
+        self.assertIn('<meta name="robots" content="index, follow">', self.source)
         self.assertIn('<script src="../js/site-config.js"></script>', self.source)
         self.assertIn('<script src="../js/app.js?v=96"></script>', self.source)
 
