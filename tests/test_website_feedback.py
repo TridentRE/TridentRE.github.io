@@ -24,9 +24,9 @@ class WebsiteFeedbackTests(unittest.TestCase):
         for file in ['index.html','certifications.html']:
             text=(ROOT/file).read_text()
             for name,label in [('iko','IKO Certified Contractor'),('gaf','GAF Certified')]:
-                self.assertIn(f'src="assets/{name}-logo.svg"',text)
+                self.assertIn(f'src="assets/{name}-logo-red.svg"',text)
                 self.assertIn(label,text)
-                self.assertIn('<svg',(ROOT/f'assets/{name}-logo.svg').read_text())
+                self.assertIn('<svg',(ROOT/f'assets/{name}-logo-red.svg').read_text())
 
     def test_siding_options_in_primary_service_copy(self):
         for file in ['services/siding.html','services/index.html','index.html','js/app.js']:
