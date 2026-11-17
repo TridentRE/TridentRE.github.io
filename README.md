@@ -39,3 +39,38 @@ screenshots. It also checks hover, focus, pause, manual controls, reduced motion
 preview noindex, image loading and horizontal overflow. No forms are submitted.
 Photo approval sources and deliberately retained assets are recorded in
 `data/website/photo-provenance-20261114.json`.
+
+## Website attribution / optional analytics
+
+All 156 pages load `js/analytics-config.js` then `js/website-metrics.js` with
+`defer`. No visible markup/styles changed. First-touch landing path, referrer
+host/path, campaign tags and click IDs are stored under
+`localStorage['trident.attribution.v1']` for 30 days; a new campaign replaces
+last-touch campaign fields without changing the original landing/time.
+Contact submissions include the flattened last-touch attribution plus formPage.
+See [the wire contract](data/website/metrics-contract.md) for caps and semantics.
+
+**GA4 and Clarity are OFF.** The only configuration location is
+`js/analytics-config.js`: `window.TRIDENT_ANALYTICS_CONFIG.GA4_ID` and
+`window.TRIDENT_ANALYTICS_CONFIG.CLARITY_ID`, both empty strings. Empty/invalid
+IDs load nothing and create no third-party queues. Set the approved IDs there
+(`G-…` for GA4; Clarity project ID only, not a whole script), then release through
+the normal backup/review process. Enabled GA4 records a page view, `click_call`
+on tel taps and `generate_lead` only after a saved request. GA page URLs and
+referrers omit query strings and fragments. Review privacy/consent settings
+before enabling either third-party provider.
+
+Anonymous `call_tap`, first `form_start` per page load, and successful
+`form_submit` counts POST to the production website-event endpoint from the
+three approved hosts, including the GitHub preview. Preview **form submissions**
+still go only to the development intake. Automated tests intercept all writes;
+do not exercise preview metrics against production casually.
+
+Additional offline browser regression (Playwright installed outside the repo):
+
+```sh
+PLAYWRIGHT_MODULE=/path/to/playwright METRICS_ARTIFACTS=/path/to/output node tests/render_metrics.cjs
+```
+
+Every network request is served locally or mocked, including failed/successful
+form requests and beacons. It cannot create a production lead or metric count.
