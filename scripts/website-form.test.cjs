@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const path = require('node:path');
 const source = fs.readFileSync(process.env.FORM_SOURCE || path.join(__dirname, '../js/website-form.js'), 'utf8');
-function fixture({host='tridentre.github.io', mode, transport, valid=true}={}) {
+function fixture({host='tridentre.github.io', mode, transport, valid=true, metrics}={}) {
   const calls=[]; const fields={};
   for(const name of ['name','phone','email','address','message']) fields[name]={value:{name:'Test-Name Person',phone:'202-555-0149',email:'test@example.invalid',address:'123 Test Street',message:'Synthetic test only'}[name]};
   const checks=[{value:'roofing', checked:true, dispatchEvent(){this.changed=true;}},{value:'siding',checked:false,dispatchEvent(){this.changed=true;}}];
@@ -14,7 +14,7 @@ function fixture({host='tridentre.github.io', mode, transport, valid=true}={}) {
     appendChild(el){this.children.push(el);},querySelector(q){if(q.startsWith('button'))return button;if(q.includes('insurance_claim'))return {checked:true};},
     querySelectorAll(q){return q.includes(':checked') ? checks.filter(c=>c.checked):checks;},
     addEventListener(event,fn){this.events[event]=fn;},reportValidity(){return valid;},reset(){for(const f of Object.values(fields))f.value='';for(const c of checks)c.checked=false;this.resetCalled=true;}};
-  const win={location:{hostname:host,search:'?project=commercial'},TRIDENT_SITE:{releaseMode:mode},crypto:require('node:crypto').webcrypto};
+  const win={location:{hostname:host,search:'?project=commercial'},TRIDENT_SITE:{releaseMode:mode},TRIDENT_METRICS:metrics,crypto:require('node:crypto').webcrypto};
   const context={window:win,document:{getElementById(id){return id==='consultation-form'?form:null;},createElement:makeElement},
     URLSearchParams,Uint8Array,Array,Event,AbortController,setTimeout,clearTimeout,
     fetch:async(url,opts)=>{calls.push({url,opts});return transport?transport(url,opts):{ok:true,json:async()=>({ok:true})};}};
@@ -64,3 +64,17 @@ test('double-click while pending makes one network call',async()=>{
  resolve({ok:true,json:async()=>({ok:true})});await first;assert.equal(f.button.disabled,false);
 });
 test('invalid browser form never sends',async()=>{const f=fixture({valid:false});await f.submit();assert.equal(f.calls.length,0);});
+
+test('attribution attaches to existing payload and success alone emits form_submit',async()=>{
+ const attribution={formPage:'/contact.html',landingPage:'/services/roofing.html',utm_source:'google',gclid:'id',firstSeenAt:123};
+ const events=[];const metrics={attribution:()=>attribution,track:type=>events.push(type)};
+ const f=fixture({metrics});await f.submit();assert.deepEqual(JSON.parse(f.calls[0].opts.body).attribution,attribution);assert.deepEqual(events,['form_submit']);
+ for(const transport of [async()=>({ok:false,json:async()=>({error:'No'})}),async()=>({ok:true,json:async()=>({ok:false})}),async()=>{throw Error('offline');}]) {
+  events.length=0;const failed=fixture({metrics,transport});await failed.submit();assert.deepEqual(events,[]);assert.equal(failed.form.resetCalled,undefined);
+ }
+});
+
+test('broken optional metrics cannot prevent or misreport a saved form',async()=>{
+ const f=fixture({metrics:{attribution(){throw Error('storage');},track(){throw Error('metrics');}}});
+ await f.submit();assert.equal(f.calls.length,1);assert.equal(f.form.resetCalled,true);assert.match(f.status.textContent,/saved/);
+});

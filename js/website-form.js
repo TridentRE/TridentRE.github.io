@@ -70,6 +70,7 @@
     data.services = Array.from(form.querySelectorAll('input[name="services"]:checked'), function (item) { return item.value; });
     var insurance = form.querySelector('input[name="insurance_claim"]');
     data.insurance_claim = insurance && insurance.checked ? 'yes' : 'no';
+    try { if (window.TRIDENT_METRICS) data.attribution = window.TRIDENT_METRICS.attribution(); } catch (_) { /* Metrics cannot block intake. */ }
     var content = JSON.stringify(data);
     if (!requestId || requestContent !== content) {
       requestId = freshId();
@@ -94,6 +95,7 @@
       if (!response.ok || result.ok !== true) {
         throw new Error(result.error || 'We could not save your request. Your details have been kept. Please try again or call us.');
       }
+      try { if (window.TRIDENT_METRICS) window.TRIDENT_METRICS.track('form_submit'); } catch (_) { /* Saved request stays successful. */ }
       form.reset();
       form.querySelectorAll('input[name="services"]').forEach(function (item) { item.dispatchEvent(new Event('change', { bubbles: true })); });
       requestId = null; requestContent = null;
